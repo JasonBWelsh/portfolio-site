@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
+@import url('https://fonts.googleapis.com/css?family=Exo');
+//Uitlities 
+@import 'utilities/functions',
+	'utilities/helpers',
+        'utilities/mixins',
+        'utilities/variables';
+
+// Base Styles
+@import 'base/normalize',
+        'base/base';
+
+//Layout
+@import 'layout/containers',
+        'layout/header',
+        'layout/main',
+        'layout/nav';
+
+//Components
+@import 'components/buttons',
+        'components/icons',
+        'components/images';

@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+
+body {
+	height: 100vh;
+	width: 100vw;
+	@include font-styles($family: $font-stack-primary, $color: $white, $weight: #{normal}, $lh: 1.5);
+} 
+
+a {
+	text-decoration: none;
+	color: $white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	margin: 0;
+}
+
+h1 {
+	font-size: 1.2rem;
+}
+
+ul, ol {
+	list-style: none;
+	padding-left: 0;
+}
+
