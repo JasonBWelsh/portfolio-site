@@ -6,16 +6,48 @@
 .name {
 	@include margin(2em 0);
 	text-transform: uppercase;
+	@include transition(all .4s ease);
+	&:hover {
+		color: $light;
+	}
 }
 
 .name-icon {
+	@include margin(1em 0 0);
 	height: 3em;
+	animation: name-icon-animation 10s infinite;
 }
 
 .main-nav {
-	@include margin(3em 0 0);
+	/* @include margin(3em 0 0); */
 }
 
 .main-nav-list li {
 	@include pad(1em 0);
+	color: $light;
+	@include transition(all .4s ease);
+	&:hover {
+		color: $white;
+	}
 }
+
+// logo animation keyframe
+
+@keyframes name-icon-animation {
+ 0% {
+    transform: scale(1);
+  }
+
+  25% {
+  	transform: scale(1.2);
+  }
+  50% {
+    transform: scale(0.8) rotateY(-180deg);
+  }
+  75% {
+  	transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+} 
