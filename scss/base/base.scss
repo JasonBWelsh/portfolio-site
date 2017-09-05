@@ -18,7 +18,7 @@ a {
 	@include transition(all .4s ease);
 	&:hover {
 		color: $green-blue;
-	}
+	} 
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -32,3 +32,12 @@ ul, ol {
 	padding-left: 0;
 }
 
+// Hide and show classes
+
+.hide {
+	opacity: 0;
+}
+
+.show {
+	opacity: 1;
+}
