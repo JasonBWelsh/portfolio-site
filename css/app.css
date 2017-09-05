@@ -399,10 +399,11 @@ template {
 body {
   height: 100vh;
   width: 100vw;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Exo", sans-serif;
   color: #fff;
   font-weight: normal;
-  line-height: 1.5; }
+  line-height: 1.5;
+  background: #22313F; }
 
 a {
   text-decoration: none;
@@ -412,11 +413,28 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   margin: 0; }
 
-h1 {
-  font-size: 1.2rem; }
-
 ul, ol {
   list-style: none;
   padding-left: 0; }
+
+.main-header {
+  padding: 1em;
+  text-align: center; }
+
+.name {
+  margin: 2em 0;
+  text-transform: uppercase; }
+
+.name-icon {
+  height: 3em; }
+
+.main-nav {
+  margin: 3em 0 0; }
+
+.main-nav-list li {
+  padding: 1em 0; }
+
+.banner {
+  padding: 1em; }
 
 /*# sourceMappingURL=app.css.map */
