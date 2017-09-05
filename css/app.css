@@ -514,7 +514,7 @@ ul, ol {
       justify-content: space-between;
       -ms-flex-pack: space-between;
       width: 80%;
-      margin-top: 5em; } }
+      margin-top: 6em; } }
   @media (min-width: 992px) {
     .main-nav-list {
       width: 60%; } }
@@ -544,6 +544,7 @@ ul, ol {
   animation: pulse 6s infinite; }
 
 .inner-bar {
+  fill: #6497b1;
   animation: rotate-and-pulse 6s infinite;
   animation-delay: 3s; }
 
@@ -584,7 +585,7 @@ ul, ol {
 @keyframes rotate-and-pulse {
   50% {
     transform: rotate(180deg) scale(1.2);
-    fill: #6497b1; } }
+    fill: #fff; } }
 .banner {
   padding: 1em; }
 
