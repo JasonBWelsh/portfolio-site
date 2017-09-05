@@ -454,6 +454,10 @@ ul, ol {
   .name:hover {
     color: #b3cde0; }
 
+.name-initial {
+  font-size: 2.5rem;
+  color: #6497b1; }
+
 .name-icon-container {
   display: -webkit-box;
   display: -moz-box;
@@ -544,8 +548,7 @@ ul, ol {
 
 .inner-bar {
   fill: #6497b1;
-  animation: rotate-and-pulse 6s infinite;
-  /* animation-delay: 3s; */ }
+  animation: rotate-and-pulse 6s infinite; }
 
 @keyframes grow {
   0% {

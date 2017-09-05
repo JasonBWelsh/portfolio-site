@@ -17,6 +17,11 @@
 	}
 }
 
+.name-initial {
+	font-size: 2.5rem;
+	color: $green-blue;
+}
+
 .name-icon-container {
 	@include flexbox();
 	@include justify-content(#{center});
@@ -83,7 +88,6 @@
 .inner-bar {
 	fill: $green-blue;
 	animation: rotate-and-pulse 6s infinite;
-	/* animation-delay: 3s; */
 }
 
 .left-bracket {
