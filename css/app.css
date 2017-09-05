@@ -534,7 +534,6 @@ ul, ol {
   transform-origin: 50% 50%; }
 
 .name-icon {
-  /* animation: name-icon-animation 10s infinite; */
   animation: grow 1s ease-out backwards;
   animation: turn 1.1s .2s ease-out backwards; }
 
@@ -546,22 +545,8 @@ ul, ol {
 .inner-bar {
   fill: #6497b1;
   animation: rotate-and-pulse 6s infinite;
-  animation-delay: 3s; }
+  /* animation-delay: 3s; */ }
 
-@keyframes name-icon-animation {
-  0% {
-    transform: scale(1); }
-  25% {
-    transform: scale(1.2);
-    background: rgba(100, 151, 177, 0.4); }
-  50% {
-    transform: scale(0.8) rotateY(-180deg);
-    background: rgba(0, 0, 0, 0.4); }
-  75% {
-    transform: scale(1.1);
-    background: rgba(0, 91, 150, 0.4); }
-  100% {
-    transform: scale(1); } }
 @keyframes grow {
   0% {
     transform: scale(0); }
