@@ -46,7 +46,7 @@
 }
 
 .main-nav-list {
-	margin-top: 3em;
+	margin-top: 1em;
 	@media (min-width: $break-m) {
 		@include flexbox();
 		@include flex-direction(#{row});
@@ -60,11 +60,30 @@
 }
 
 .main-nav-list li {
-	@include pad(1em 0);
+	@include pad(1em .5em);
 	color: $light;
 	@include transition(all .4s ease);
 	&:hover {
 		color: $white;
+	}
+}
+
+.header-arrow-container {
+	@media (min-width: $break-m) {
+		margin-top: 5em;
+	}
+	@media (min-width: $break-l) {
+		margin-top: 7em;
+	}
+}
+
+.header-down-arrow {
+	height: 3em;
+	width: 3em;
+	@include transition(all .4s ease);
+	&:hover {
+		transform: scale(1.2);
+		@extend %cursor-pointer;
 	}
 }
 
