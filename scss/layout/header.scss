@@ -120,12 +120,12 @@
 .inner-bar,
 .left-bracket,
 .right-bracket {
-	animation: pulse 7s;
+	animation: pulse 5s;
 }
 
 .inner-bar {
 	fill: $green-blue;
-	animation: rotate-and-pulse 7s;
+	animation: rotate-and-pulse 5s;
 }
 
 .left-bracket {

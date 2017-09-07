@@ -588,11 +588,11 @@ ul, ol {
 .inner-bar,
 .left-bracket,
 .right-bracket {
-  animation: pulse 7s; }
+  animation: pulse 5s; }
 
 .inner-bar {
   fill: #6497b1;
-  animation: rotate-and-pulse 7s; }
+  animation: rotate-and-pulse 5s; }
 
 @keyframes grow {
   0% {
