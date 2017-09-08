@@ -11,9 +11,3 @@ $(document).ready(function() {
 	header.classList.add("show");
 });
 
-// header down arrow removes header and sticks nav
-headerDownArrow.addEventListener('click', () => {
-	mainNav.style.position = "fixed";
-	mainNav.style.top = 0;
-	header.classList.add("shrink-ray");
-});

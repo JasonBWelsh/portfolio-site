@@ -1,4 +1,58 @@
 .about {
-	height: 100vh;
-	background: $green-blue;
+	@include pad(1em);
+	background: $madison;
+	@include flexbox();
+	@include justify-content(#{center});
+	@include align-items(#{center});
+}
+
+.portrait-div {
+	position: relative; //for img text overlay
+	max-width: 12em;
+	.portrait-text {
+		@include transition(all .7s ease);
+		opacity: 0; // for hover over
+		position: absolute;
+		background: rgb(0, 0, 0);
+		background: rgba($black, .5);
+		/* @include font-styles($color: $blue); */
+		padding: .3em;
+		@include border-radius(3em);
+		@media (min-width: $break-m) {
+			@include font-styles($size: 1.3rem);
+		}
+	}
+	.hi {
+		top: 33%;
+		left: 1.5em;
+		@media (min-width: $break-m) {
+			top: 25%;
+			left: 2em;
+		}
+	}
+	.imJason {
+		bottom: 10%;
+		right: 2.5em;
+	}
+	@media (min-width: $break-m) {
+		max-width: 17em;
+	}
+	&:hover .portrait-text {
+		opacity: 1;
+	}
+}
+
+.portrait {
+	@include margin(2em 0 0);
+	max-height: 12em;
+	max-width: 12em;
+	@include border-radius(50%);
+	@include transition(all .5s ease-out);
+	@media (min-width: $break-m) {
+		max-height: 17em;
+		max-width: 17em;
+	}
+	&:hover {
+		transform: scale(1.1);
+	}
 }
