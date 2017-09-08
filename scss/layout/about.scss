@@ -25,6 +25,7 @@
 	.hi {
 		top: 33%;
 		left: 1.5em;
+		transform: translateX(-3em);
 		@media (min-width: $break-m) {
 			top: 25%;
 			left: 2em;
@@ -33,12 +34,14 @@
 	.imJason {
 		bottom: 10%;
 		right: 2.5em;
+		transform: translateX(3em);
 	}
 	@media (min-width: $break-m) {
 		max-width: 17em;
 	}
 	&:hover .portrait-text {
 		opacity: 1;
+		transform: translateX(0);
 	}
 }
 
@@ -53,6 +56,6 @@
 		max-width: 17em;
 	}
 	&:hover {
-		transform: scale(1.1);
+		transform: scale(1.1) rotate(-2deg);
 	}
 }

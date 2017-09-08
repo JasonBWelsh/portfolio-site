@@ -648,19 +648,22 @@ ul, ol {
         font-size: 1.3rem; } }
   .portrait-div .hi {
     top: 33%;
-    left: 1.5em; }
+    left: 1.5em;
+    transform: translateX(-3em); }
     @media (min-width: 768px) {
       .portrait-div .hi {
         top: 25%;
         left: 2em; } }
   .portrait-div .imJason {
     bottom: 10%;
-    right: 2.5em; }
+    right: 2.5em;
+    transform: translateX(3em); }
   @media (min-width: 768px) {
     .portrait-div {
       max-width: 17em; } }
   .portrait-div:hover .portrait-text {
-    opacity: 1; }
+    opacity: 1;
+    transform: translateX(0); }
 
 .portrait {
   margin: 2em 0 0;
@@ -680,6 +683,6 @@ ul, ol {
       max-height: 17em;
       max-width: 17em; } }
   .portrait:hover {
-    transform: scale(1.1); }
+    transform: scale(1.1) rotate(-2deg); }
 
 /*# sourceMappingURL=app.css.map */
