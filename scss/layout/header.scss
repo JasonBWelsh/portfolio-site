@@ -2,7 +2,6 @@
 	@include pad(1em);
 	text-align: center;
 	@include transition(opacity 2s ease);
-	/* @include transition(background .4s ease); */
 	height: 100vh;
 }
 
@@ -60,11 +59,17 @@
 
 .main-nav-list li {
 	@include pad(1em .5em);
+	@include transition(all .4s ease);
+	&:hover {
+		transform: translateX(.5em);
+	}
 	a {
+		@include pad(1em .5em);
 		color: $light;
 		@include transition(all .4s ease);
 		&:hover {
 			color: $white;
+			transform: translateX(1em);
 		}
 	}
 }
@@ -97,11 +102,6 @@
 	bottom: 0;
 	right: 0;
 	@include transition(all .4s ease);
-}
-
-// name icon mouseover link effect
-.highlight-links {
-	color: $white !important;
 }
 
 // logo animation keyframe

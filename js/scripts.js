@@ -11,22 +11,6 @@ $(document).ready(function() {
 	header.classList.add("show");
 });
 
-// hover over name icon to highlight nav links
-nameIcon.addEventListener('mouseover', () => {
-	let items = mainNavList.children;
-	for ( let i=0; i < items.length; i += 1 ) {
-		let link = items[i].firstChild;
-		link.classList.add("highlight-links");
-	}
-});
-nameIcon.addEventListener('mouseout', () => {
-	let items = mainNavList.children;
-	for ( let i=0; i < items.length; i += 1 ) {
-		let link = items[i].firstChild;
-		link.classList.remove("highlight-links");
-	}
-});
-
 // header down arrow removes header and sticks nav
 headerDownArrow.addEventListener('click', () => {
 	mainNav.style.position = "fixed";
