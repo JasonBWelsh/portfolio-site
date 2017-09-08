@@ -2,7 +2,7 @@
 	@include pad(1em);
 	text-align: center;
 	@include transition(opacity 2s ease);
-	@include transition(background .4s ease);
+	/* @include transition(background .4s ease); */
 	height: 100vh;
 }
 
