@@ -102,7 +102,6 @@
 // name icon mouseover link effect
 .highlight-links {
 	color: $white !important;
-	transform: rotate(360deg);
 }
 
 // logo animation keyframe
@@ -127,14 +126,6 @@
 	animation: rotate-and-pulse 5s;
 }
 
-.left-bracket {
-	
-}
-
-.right-bracket {
-
-}
-
 @keyframes grow {
 
   0% {
@@ -177,87 +168,3 @@
 	}
 }
 
-
-
-
-
-
-/// animation backup
-
-/* .highlight-links {
-	color: $white;
-	transform: rotate(360deg);
-} */
-
-// logo animation keyframe
-
-/* .name-icon * {
-  transform-origin: 50% 50%;
-}
-
-.name-icon {
-	animation: grow 1s ease-out backwards;
-	animation: turn 1.1s .2s ease-out backwards;
-}
-
-.inner-bar,
-.left-bracket,
-.right-bracket {
-	animation: pulse 7s infinite;
-}
-
-.inner-bar {
-	fill: $green-blue;
-	animation: rotate-and-pulse 7s infinite;
-}
-
-.left-bracket {
-	
-}
-
-.right-bracket {
-
-}
-
-@keyframes grow {
-
-  0% {
-    transform: scale(0);
-  }
-  30% {
-    transform: scale(1.1);
-  }
-  60% {
-    transform: scale(0.9);
-  }
-}
-
-@keyframes turn {
-  0% {
-    transform: rotate(0) scale(0);
-    opacity: 0;
-  }
-  60% {
-    transform: rotate(375deg) scale(1.1);
-  }
-  80% {
-    transform: rotate(355deg) scale(0.9);
-  }
-  100% {
-    transform: rotate(360deg) scale(1);
-  }
-}
-
-@keyframes pulse {
-  50% {
-    transform: scale(1.2);
-  }
-}
-
-@keyframes rotate-and-pulse {
-	50% {
-		transform: rotate(180deg) scale(1.2);
-		fill: $white;
-	}
-}
- */
