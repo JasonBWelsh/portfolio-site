@@ -491,9 +491,6 @@ ul, ol {
   /* stops bg color from leaking outside the border: */
   height: 5em;
   width: 6em; }
-  @media (min-width: 768px) {
-    .name-icon {
-      margin: 0 0 2em; } }
 
 @media (min-width: 768px) {
   .main-nav {
@@ -533,15 +530,16 @@ ul, ol {
       width: 60%; } }
 
 .main-nav-list li {
-  padding: 1em 0.5em;
-  color: #b3cde0;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  transition: all 0.4s ease; }
-  .main-nav-list li:hover {
-    color: #fff; }
+  padding: 1em 0.5em; }
+  .main-nav-list li a {
+    color: #b3cde0;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+    .main-nav-list li a:hover {
+      color: #fff; }
 
 @media (min-width: 768px) {
   .header-arrow-container {
@@ -575,7 +573,7 @@ ul, ol {
   transition: all 0.4s ease; }
 
 .highlight-links {
-  color: #fff;
+  color: #fff !important;
   transform: rotate(360deg); }
 
 .name-icon * {

@@ -35,9 +35,6 @@
 	@include border-radius(50%);
 	height: 5em;
 	width: 6em;
-	@media (min-width: #{$break-m}) {
-		@include margin(0 0 2em);
-	}
 }
 
 .main-nav {
@@ -63,10 +60,12 @@
 
 .main-nav-list li {
 	@include pad(1em .5em);
-	color: $light;
-	@include transition(all .4s ease);
-	&:hover {
-		color: $white;
+	a {
+		color: $light;
+		@include transition(all .4s ease);
+		&:hover {
+			color: $white;
+		}
 	}
 }
 
@@ -102,7 +101,7 @@
 
 // name icon mouseover link effect
 .highlight-links {
-	color: $white;
+	color: $white !important;
 	transform: rotate(360deg);
 }
 
