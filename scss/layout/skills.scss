@@ -1,3 +1,37 @@
+.skills, .skills-list {
+	@include pad(1em);
+	@include flexbox();
+	@include justify-content(#{center});
+	@include align-items(#{center});
+}
+
 .skills {
-	background: $darkest-blue;
+	@include flex-direction(#{column});
+	@include pad(1em);
+	h2 {
+		@include margin(1em 0);
+	}
+}
+
+.skills-list {
+	@include flex-direction(#{row});
+	@include flex-wrap(#{wrap});
+	margin-top: 0;
+	@media (min-width: $break-m) {
+		width: 80%;
+	}
+	li {
+		@include flexbox();
+		@include justify-content(#{center});
+		@include margin(1em);
+		flex: 1 30%;
+		@media (min-width: $break-m) {
+			flex-basis: 20%;
+		}
+	}
+	span.skill {
+		@include pad(.5em);
+		background: $white;
+		color: $ebony-clay;
+	}
 }
