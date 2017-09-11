@@ -641,11 +641,7 @@ ul, ol {
     position: absolute;
     background: black;
     background: rgba(0, 0, 0, 0.5);
-    padding: .3em;
-    -webkit-border-radius: 3em;
-    border-radius: 3em;
-    background-clip: padding-box;
-    /* stops bg color from leaking outside the border: */ }
+    padding: .3em; }
     @media (min-width: 768px) {
       .portrait-div .portrait-text {
         font-size: 1.3rem; } }

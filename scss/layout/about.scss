@@ -17,7 +17,6 @@
 		background: rgb(0, 0, 0);
 		background: rgba($black, .5);
 		padding: .3em;
-		@include border-radius(3em);
 		@media (min-width: $break-m) {
 			@include font-styles($size: 1.3rem);
 		}
