@@ -644,7 +644,7 @@ ul, ol {
     padding: .3em; }
     @media (min-width: 768px) {
       .portrait-div .portrait-text {
-        font-size: 1.3rem; } }
+        /* @include font-styles($size: 1.3rem); */ } }
   .portrait-div span.hi {
     top: 33%;
     left: 1.5em;
@@ -679,8 +679,8 @@ ul, ol {
   transition: all 0.4s ease-out; }
   @media (min-width: 768px) {
     .portrait {
-      max-height: 17em;
-      max-width: 17em; } }
+      max-height: 15em;
+      max-width: 15em; } }
   .portrait:hover {
     transform: scale(1.1); }
 
@@ -694,7 +694,7 @@ ul, ol {
     background: rgba(50, 50, 50, 0.5); }
   .about-text p {
     padding: 1em;
-    background: rgba(34, 49, 63, 0.3); }
+    /* background: rgba($ebony-clay, .3); */ }
   @media (min-width: 768px) {
     .about-text {
       width: 80%; } }
