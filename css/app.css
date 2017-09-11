@@ -622,22 +622,25 @@ ul, ol {
   -webkit-align-items: center;
   -moz-align-items: center;
   -ms-align-items: center;
-  align-items: center; }
+  align-items: center;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
 .portrait-div {
   position: relative;
   max-width: 12em; }
   .portrait-div .portrait-text {
-    -webkit-transition: all 0.7s ease;
-    -moz-transition: all 0.7s ease;
-    -ms-transition: all 0.7s ease;
-    -o-transition: all 0.7s ease;
-    transition: all 0.7s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     opacity: 0;
     position: absolute;
     background: black;
     background: rgba(0, 0, 0, 0.5);
-    /* @include font-styles($color: $blue); */
     padding: .3em;
     -webkit-border-radius: 3em;
     border-radius: 3em;
@@ -646,15 +649,15 @@ ul, ol {
     @media (min-width: 768px) {
       .portrait-div .portrait-text {
         font-size: 1.3rem; } }
-  .portrait-div .hi {
+  .portrait-div span.hi {
     top: 33%;
     left: 1.5em;
     transform: translateX(-3em); }
     @media (min-width: 768px) {
-      .portrait-div .hi {
+      .portrait-div span.hi {
         top: 25%;
         left: 2em; } }
-  .portrait-div .imJason {
+  .portrait-div span.imJason {
     bottom: 10%;
     right: 2.5em;
     transform: translateX(3em); }
@@ -673,16 +676,31 @@ ul, ol {
   border-radius: 50%;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -ms-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out; }
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out; }
   @media (min-width: 768px) {
     .portrait {
       max-height: 17em;
       max-width: 17em; } }
   .portrait:hover {
-    transform: scale(1.1) rotate(-2deg); }
+    transform: scale(1.1); }
+
+.about-text {
+  margin: 2em 0 0;
+  padding: 1em;
+  background: rgba(50, 50, 50, 0.5);
+  text-align: center;
+  line-height: 2; }
+  .about-text h2 {
+    color: #b3cde0; }
+  @media (min-width: 768px) {
+    .about-text {
+      width: 80%; } }
+  @media (min-width: 992px) {
+    .about-text {
+      width: 60%; } }
 
 /*# sourceMappingURL=app.css.map */

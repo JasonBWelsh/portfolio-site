@@ -4,25 +4,25 @@
 	@include flexbox();
 	@include justify-content(#{center});
 	@include align-items(#{center});
+	@include flex-direction(#{column});
 }
 
 .portrait-div {
 	position: relative; //for img text overlay
 	max-width: 12em;
 	.portrait-text {
-		@include transition(all .7s ease);
+		@include transition(all .5s ease);
 		opacity: 0; // for hover over
 		position: absolute;
 		background: rgb(0, 0, 0);
 		background: rgba($black, .5);
-		/* @include font-styles($color: $blue); */
 		padding: .3em;
 		@include border-radius(3em);
 		@media (min-width: $break-m) {
 			@include font-styles($size: 1.3rem);
 		}
 	}
-	.hi {
+	span.hi {
 		top: 33%;
 		left: 1.5em;
 		transform: translateX(-3em);
@@ -31,7 +31,7 @@
 			left: 2em;
 		}
 	}
-	.imJason {
+	span.imJason {
 		bottom: 10%;
 		right: 2.5em;
 		transform: translateX(3em);
@@ -50,12 +50,29 @@
 	max-height: 12em;
 	max-width: 12em;
 	@include border-radius(50%);
-	@include transition(all .5s ease-out);
+	@include transition(all .4s ease-out);
 	@media (min-width: $break-m) {
 		max-height: 17em;
 		max-width: 17em;
 	}
 	&:hover {
-		transform: scale(1.1) rotate(-2deg);
+		transform: scale(1.1);
+	}
+}
+
+.about-text {
+	@include margin(2em 0 0);
+	@include pad(1em);
+	background: rgba($dark, .5);
+	text-align: center;
+	line-height: 2;
+	h2 {
+		color: $light;
+	}
+	@media (min-width: $break-m) {
+		width: 80%;
+	}
+	@media (min-width: $break-l) {
+		width: 60%;
 	}
 }
