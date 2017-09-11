@@ -2,7 +2,6 @@
 	@include pad(1em);
 	text-align: center;
 	@include transition(opacity 2s ease);
-	height: 100vh;
 }
 
 .name {
@@ -76,10 +75,10 @@
 
 .header-arrow-container {
 	@media (min-width: $break-m) {
-		margin-top: 5em;
+		@include margin(5em 0);
 	}
 	@media (min-width: $break-l) {
-		margin-top: 7em;
+		@include margin(7em 0);
 	}
 }
 

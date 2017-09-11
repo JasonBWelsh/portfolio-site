@@ -440,8 +440,7 @@ ul, ol {
   -moz-transition: opacity 2s ease;
   -ms-transition: opacity 2s ease;
   -o-transition: opacity 2s ease;
-  transition: opacity 2s ease;
-  height: 100vh; }
+  transition: opacity 2s ease; }
 
 .name {
   margin: 2em 0 1em;
@@ -547,10 +546,10 @@ ul, ol {
 
 @media (min-width: 768px) {
   .header-arrow-container {
-    margin-top: 5em; } }
+    margin: 5em 0; } }
 @media (min-width: 992px) {
   .header-arrow-container {
-    margin-top: 7em; } }
+    margin: 7em 0; } }
 
 .header-down-arrow {
   height: 3em;
@@ -701,5 +700,8 @@ ul, ol {
   @media (min-width: 992px) {
     .about-text {
       width: 60%; } }
+
+.skills {
+  background: #011f4b; }
 
 /*# sourceMappingURL=app.css.map */
