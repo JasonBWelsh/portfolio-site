@@ -685,13 +685,16 @@ ul, ol {
     transform: scale(1.1); }
 
 .about-text {
-  margin: 2em 0 0;
+  margin: 2em 0;
   padding: 1em;
-  background: rgba(50, 50, 50, 0.5);
   text-align: center;
   line-height: 2; }
   .about-text h2 {
-    color: #b3cde0; }
+    color: #b3cde0;
+    background: rgba(50, 50, 50, 0.5); }
+  .about-text p {
+    padding: 1em;
+    background: rgba(34, 49, 63, 0.3); }
   @media (min-width: 768px) {
     .about-text {
       width: 80%; } }
