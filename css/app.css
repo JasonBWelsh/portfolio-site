@@ -784,7 +784,7 @@ ul, ol {
 
 .highlight-skill-item {
   /* transform: scale(1.1) rotate(-5deg); */
-  transform: rotateX(360deg);
+  transform: rotateX(360deg) scale(1.1);
   background: #fff;
   color: #22313F; }
 
