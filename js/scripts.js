@@ -26,9 +26,9 @@ function highlightSkill() {
 		}
 		if ( dataSkill === ranNum ) {
 			curSkill.classList.add("highlight-skill-item");
-			timeoutID = window.setTimeout(removeHighlightSkill, 1000);
+			timeoutID = window.setTimeout(removeHighlightSkill, 2000);
 		}
 	}
 }
 
-var intervalID = window.setInterval(highlightSkill, 2000);
+var intervalID = window.setInterval(highlightSkill, 3000);

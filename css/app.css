@@ -760,11 +760,11 @@ ul, ol {
     justify-content: center;
     -ms-flex-pack: center;
     margin: 1em;
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -ms-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     border: 1px solid #fff;
     width: 6em; }
     @media (min-width: 768px) {
@@ -783,6 +783,9 @@ ul, ol {
     padding: 0.5em; }
 
 .highlight-skill-item {
-  transform: rotate(-15deg); }
+  /* transform: scale(1.1) rotate(-5deg); */
+  transform: rotateX(360deg);
+  background: #fff;
+  color: #22313F; }
 
 /*# sourceMappingURL=app.css.map */
