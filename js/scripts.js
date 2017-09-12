@@ -5,9 +5,25 @@ const nameIcon = document.querySelector(".name-icon");
 const mainNavList = document.querySelector(".main-nav-list");
 const headerDownArrow = document.querySelector(".header-down-arrow");
 
+const skillsList = document.querySelector(".skills-list");
+
 //fade in header
 $(document).ready(function() {
 	header.classList.remove("hide");
 	header.classList.add("show");
 });
 
+// set random skills list item change
+function highlightSkill() {
+	let skills = skillsList.children;
+	let x = skills.length;
+	let ranNum = Math.floor(Math.random() * x) + 1;
+	for ( let i = 0; i < skills.length; i += 1 ) {
+		let curSkill = skills[i];
+		let dataSkill = parseInt(curSkill.getAttribute("data-skill"), 10);
+		if ( dataSkill === ranNum ) {
+			curSkill.classList.add("highlight-skill-item");
+		}
+	}
+}
+highlightSkill();

@@ -707,7 +707,13 @@ ul, ol {
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  display: flex;
+  display: flex; }
+
+.skills {
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-justify-content: center;
   -moz-justify-content: center;
   -ms-justify-content: center;
@@ -716,13 +722,7 @@ ul, ol {
   -webkit-align-items: center;
   -moz-align-items: center;
   -ms-align-items: center;
-  align-items: center; }
-
-.skills {
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  align-items: center;
   padding: 1em; }
   .skills h2 {
     margin: 1em 0; }
@@ -736,6 +736,11 @@ ul, ol {
   -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: space-around;
   margin-top: 0; }
   @media (min-width: 768px) {
     .skills-list {
@@ -752,13 +757,32 @@ ul, ol {
     justify-content: center;
     -ms-flex-pack: center;
     margin: 1em;
-    flex: 1 30%; }
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    /* background: $white; */
+    /* color: $ebony-clay; */
+    border: 1px solid #fff;
+    /* flex: 1 30%; */
+    width: 6em; }
     @media (min-width: 768px) {
       .skills-list li {
-        flex-basis: 20%; } }
+        /* flex: 1 20%; */ } }
+    .skills-list li:hover span.skill {
+      transform: scale(1.1); }
+    .skills-list li:nth-child(odd):hover {
+      /* background: $ebony-clay; */ }
   .skills-list span.skill {
-    padding: 0.5em;
-    background: #fff;
-    color: #22313F; }
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    padding: 0.5em; }
+
+.highlight-skill-item {
+  transform: rotate(-15deg); }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,12 +1,12 @@
 .skills, .skills-list {
 	@include pad(1em);
-	@include flexbox();
-	@include justify-content(#{center});
-	@include align-items(#{center});
+	@include flexbox();	
 }
 
 .skills {
 	@include flex-direction(#{column});
+	@include justify-content(#{center});
+	@include align-items(#{center});
 	@include pad(1em);
 	h2 {
 		@include margin(1em 0);
@@ -16,6 +16,7 @@
 .skills-list {
 	@include flex-direction(#{row});
 	@include flex-wrap(#{wrap});
+	@include justify-content(#{space-around});
 	margin-top: 0;
 	@media (min-width: $break-m) {
 		width: 80%;
@@ -24,14 +25,31 @@
 		@include flexbox();
 		@include justify-content(#{center});
 		@include margin(1em);
-		flex: 1 30%;
+		@include transition(all .4s ease);
+		/* background: $white; */
+		/* color: $ebony-clay; */
+		border: 1px solid $white;
+		/* flex: 1 30%; */
+		width: 6em;
 		@media (min-width: $break-m) {
-			flex-basis: 20%;
+			/* flex: 1 20%; */
 		}
+		&:hover {
+	
+		}
+		&:hover span.skill {
+			transform: scale(1.1);
+		}
+		&:nth-child(odd):hover {
+			/* background: $ebony-clay; */
+		} 
 	}
 	span.skill {
+		@include transition(all .4s ease);
 		@include pad(.5em);
-		background: $white;
-		color: $ebony-clay;
 	}
+}
+
+.highlight-skill-item { // set in JS 
+	transform: rotate(-15deg);
 }
