@@ -5,11 +5,11 @@
 }
 
 .name {
-	@include margin(2em 0 1em);
+	@include margin(2em 0 0);
 	text-transform: uppercase;
 	@include transition(all .4s ease);
 	@media (min-width: #{$break-m}) {
-		@include margin(3em 0 1em 0);
+		@include margin(3em 0 0);
 	}
 	&:hover {
 		color: $light;
@@ -28,7 +28,7 @@
 }
 
 .name-icon {
-	@include margin(0 0 1em);
+	@include margin(2em 0);
 	@include pad (.5em);
 	@include border-radius(50%);
 	height: 5em;
@@ -49,7 +49,7 @@
 		@include flex-direction(#{row});
 		@include justify-content(#{space-between});
 		width: 80%;
-		margin-top: 6em;
+		margin-top: 4em;
 	}
 	@media (min-width: #{$break-l}) {
 		width: 60%;
