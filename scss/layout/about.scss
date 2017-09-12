@@ -70,7 +70,6 @@
 	}
 	p {
 		@include pad(1em);
-		/* background: rgba($ebony-clay, .3); */
 	}
 	@media (min-width: $break-m) {
 		width: 80%;
