@@ -15,7 +15,7 @@ $(document).ready(function() {
 
 // set random skills list item change
 function highlightSkill() {
-	let skills = skillsList.children;
+	let skills = skillsList.children; // li els
 	let x = skills.length;
 	let ranNum = Math.floor(Math.random() * x) + 1;
 	for ( let i = 0; i < skills.length; i += 1 ) {
@@ -30,5 +30,22 @@ function highlightSkill() {
 		}
 	}
 }
-
 var intervalID = window.setInterval(highlightSkill, 3000);
+
+// click skill list li to add class to child span
+skillsList.addEventListener('click', (e) => {
+	let target = e.target;
+	if (target.tagName === 'LI') {
+		let skillSpan = target.firstElementChild;
+		function shrinkSkillSpan() {
+			skillSpan.classList.remove("grow-skill");
+		}
+		timeoutID = window.setTimeout(shrinkSkillSpan, 1000);
+	} else if (target.tagName === 'SPAN') {
+		target.classList.add("grow-skill");
+		function shrinkTarget() {
+			target.classList.remove("grow-skill");
+		}
+		timeoutID = window.setTimeout(shrinkTarget, 1000);
+	}
+});

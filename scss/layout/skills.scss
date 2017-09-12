@@ -30,20 +30,11 @@
 		@include transition(all .5s ease);
 		border: 1px solid $white;
 		width: 6em;
-		@media (min-width: $break-m) {
-			/* flex: 1 20%; */
-		}
-		&:hover {
-	
-		}
+		overflow: visible; // for clicked span size
 		&:hover span.skill {
-			/* transform: scale(1.1); */
 			border: 1px solid $white;
 			@include border-radius(50%);
 		}
-		&:nth-child(odd):hover {
-			/* background: $ebony-clay; */
-		} 
 	}
 	span.skill {
 		@include transition(all .4s ease);
@@ -53,8 +44,11 @@
 }
 
 .highlight-skill-item { // set in JS 
-	/* transform: scale(1.1) rotate(-5deg); */
 	transform: rotateX(360deg) scale(1.1);
 	background: $white;
 	color: $ebony-clay;
+}
+
+.grow-skill { // set in JS
+	transform: scale(1.5);
 }
