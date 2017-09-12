@@ -546,10 +546,10 @@ ul, ol {
 
 @media (min-width: 768px) {
   .header-arrow-container {
-    margin: 5em 0; } }
+    margin: 5em 0 1em 0; } }
 @media (min-width: 992px) {
   .header-arrow-container {
-    margin: 7em 0; } }
+    margin: 7em 0 1em 0; } }
 
 .header-down-arrow {
   height: 3em;

@@ -75,10 +75,10 @@
 
 .header-arrow-container {
 	@media (min-width: $break-m) {
-		@include margin(5em 0);
+		@include margin(5em 0 1em 0);
 	}
 	@media (min-width: $break-l) {
-		@include margin(7em 0);
+		@include margin(7em 0 1em 0);
 	}
 }
 
