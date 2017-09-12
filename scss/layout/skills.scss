@@ -8,7 +8,22 @@
 	@include align-items(#{center});
 	@include pad(1em);
 	h2 {
-		@include margin(1em 0);
+		@include margin(1em 0 .5em);
+	}
+}
+
+.tools-container {
+	@include margin(0 0 .5em);
+	&:hover .tools {
+		transform: rotateX(180deg);
+	}
+}
+
+.tools {
+	height: 3em;
+	width: 3em;
+	&, & * {
+		@include transition(all .4s ease);
 	}
 }
 

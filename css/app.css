@@ -611,7 +611,6 @@ ul, ol {
 
 .about {
   padding: 1em;
-  /* background: $madison; */
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -688,13 +687,14 @@ ul, ol {
     transform: scale(1.1); }
 
 .about-text {
-  margin: 2em 0;
+  margin: 1em 0 0;
   padding: 1em;
   text-align: center;
   line-height: 2; }
   .about-text h2 {
+    border: 1px solid #b3cde0;
     color: #b3cde0;
-    background: rgba(50, 50, 50, 0.5); }
+    /* background: $dark; */ }
   .about-text p {
     padding: 1em; }
   @media (min-width: 768px) {
@@ -727,7 +727,22 @@ ul, ol {
   align-items: center;
   padding: 1em; }
   .skills h2 {
-    margin: 1em 0; }
+    margin: 1em 0 0.5em; }
+
+.tools-container {
+  margin: 0 0 0.5em; }
+  .tools-container:hover .tools {
+    transform: rotateX(180deg); }
+
+.tools {
+  height: 3em;
+  width: 3em; }
+  .tools, .tools * {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
 
 .skills-list {
   -webkit-flex-direction: row;

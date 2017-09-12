@@ -1,6 +1,5 @@
 .about {
 	@include pad(1em);
-	/* background: $madison; */
 	@include flexbox();
 	@include justify-content(#{center});
 	@include align-items(#{center});
@@ -60,13 +59,14 @@
 }
 
 .about-text {
-	@include margin(2em 0);
+	@include margin(1em 0 0);
 	@include pad(1em);
 	text-align: center;
 	line-height: 2;
 	h2 {
+		border: 1px solid $light;
 		color: $light;
-		background: rgba($dark, .5);
+		/* background: $dark; */
 	}
 	p {
 		@include pad(1em);
