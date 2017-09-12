@@ -1,6 +1,6 @@
 .about {
 	@include pad(1em);
-	background: $madison;
+	/* background: $madison; */
 	@include flexbox();
 	@include justify-content(#{center});
 	@include align-items(#{center});

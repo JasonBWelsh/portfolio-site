@@ -433,6 +433,10 @@ ul, ol {
 .show {
   opacity: 1; }
 
+.about,
+.skills {
+  border-top: 1px solid #2C3E50; }
+
 .main-header {
   padding: 1em;
   text-align: center;
@@ -607,7 +611,7 @@ ul, ol {
 
 .about {
   padding: 1em;
-  background: #2C3E50;
+  /* background: $madison; */
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
