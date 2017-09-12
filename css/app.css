@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400");
 @import url("https://fonts.googleapis.com/css?family=Exo");
-.header-down-arrow:hover, .skills-list li {
+.header-down-arrow:hover, .about-list li, .skills-list li {
   cursor: pointer; }
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -692,17 +692,99 @@ ul, ol {
   text-align: center;
   line-height: 2; }
   .about-text h2 {
+    margin: 0 0 1em;
     border: 1px solid #b3cde0;
-    color: #b3cde0;
-    /* background: $dark; */ }
+    color: #b3cde0; }
   .about-text p {
-    padding: 1em; }
+    margin: 0;
+    padding: 0.5em; }
   @media (min-width: 768px) {
     .about-text {
       width: 80%; } }
   @media (min-width: 992px) {
     .about-text {
       width: 60%; } }
+
+.about-list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center; }
+  .about-list li {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    padding: 1em 0.5em;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+    border: 1px solid #fff;
+    height: 4.5em;
+    width: 4.5em;
+    color: #fff;
+    font-size: .9rem;
+    background: #323232;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+    .about-list li:hover {
+      transform: scale(1.1); }
+
+.about-card-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  margin: 2em 0 0;
+  background: rgba(0, 0, 0, 0.3); }
+
+.about-card {
+  display: none; }
+
+.display {
+  display: block; }
 
 .skills, .skills-list {
   display: -webkit-box;

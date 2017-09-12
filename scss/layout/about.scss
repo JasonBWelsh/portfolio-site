@@ -64,12 +64,13 @@
 	text-align: center;
 	line-height: 2;
 	h2 {
+		@include margin(0 0 1em);
 		border: 1px solid $light;
 		color: $light;
-		/* background: $dark; */
 	}
 	p {
-		@include pad(1em);
+		@include margin(0);
+		@include pad(.5em);
 	}
 	@media (min-width: $break-m) {
 		width: 80%;
@@ -77,4 +78,45 @@
 	@media (min-width: $break-l) {
 		width: 60%;
 	}
+}
+
+.about-list {
+	@include flexbox();
+	@include flex-wrap(#{wrap});
+	@include justify-content(#{space-around});
+	@include align-items(#{center});
+	li {
+		@include flexbox();
+		@include justify-content(#{center});
+		@include align-items(#{center});
+		@include pad(1em .5em);
+		@include border-radius(50%);
+		border: 1px solid $white;
+		height: 4.5em;
+		width: 4.5em;
+		color: $white;
+		font-size: .9rem;
+		background: $dark;
+		@extend %cursor-pointer;
+		@include transition(all .4s ease);
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+}
+
+.about-card-container {
+	@include flexbox();
+	@include flex-direction(#{column});
+	@include justify-content(#{center});
+	@include align-items(#{center});
+	@include margin(2em 0 0);
+	background: rgba($black, .3);
+}
+//classes to set/remove in JS for about nav display
+.about-card {
+	display: none;
+}
+.display {
+	display: block;
 }
