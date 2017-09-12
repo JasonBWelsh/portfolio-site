@@ -745,6 +745,9 @@ ul, ol {
   @media (min-width: 768px) {
     .skills-list {
       width: 80%; } }
+  @media (min-width: 992px) {
+    .skills-list {
+      width: 60%; } }
   .skills-list li {
     display: -webkit-box;
     display: -moz-box;
@@ -762,10 +765,7 @@ ul, ol {
     -ms-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
-    /* background: $white; */
-    /* color: $ebony-clay; */
     border: 1px solid #fff;
-    /* flex: 1 30%; */
     width: 6em; }
     @media (min-width: 768px) {
       .skills-list li {

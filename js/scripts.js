@@ -21,9 +21,14 @@ function highlightSkill() {
 	for ( let i = 0; i < skills.length; i += 1 ) {
 		let curSkill = skills[i];
 		let dataSkill = parseInt(curSkill.getAttribute("data-skill"), 10);
+		function removeHighlightSkill() {
+			curSkill.classList.remove("highlight-skill-item");
+		}
 		if ( dataSkill === ranNum ) {
 			curSkill.classList.add("highlight-skill-item");
+			timeoutID = window.setTimeout(removeHighlightSkill, 1000);
 		}
 	}
 }
-highlightSkill();
+
+var intervalID = window.setInterval(highlightSkill, 2000);

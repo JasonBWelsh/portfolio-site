@@ -21,15 +21,15 @@
 	@media (min-width: $break-m) {
 		width: 80%;
 	}
+	@media (min-width: $break-l) {
+		width: 60%;
+	}
 	li {
 		@include flexbox();
 		@include justify-content(#{center});
 		@include margin(1em);
 		@include transition(all .4s ease);
-		/* background: $white; */
-		/* color: $ebony-clay; */
 		border: 1px solid $white;
-		/* flex: 1 30%; */
 		width: 6em;
 		@media (min-width: $break-m) {
 			/* flex: 1 20%; */
