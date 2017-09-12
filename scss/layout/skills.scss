@@ -1,5 +1,4 @@
 .skills, .skills-list {
-	@include pad(1em);
 	@include flexbox();	
 }
 
@@ -38,7 +37,9 @@
 	
 		}
 		&:hover span.skill {
-			transform: scale(1.1);
+			/* transform: scale(1.1); */
+			border: 1px solid $white;
+			@include border-radius(50%);
 		}
 		&:nth-child(odd):hover {
 			/* background: $ebony-clay; */
@@ -47,6 +48,7 @@
 	span.skill {
 		@include transition(all .4s ease);
 		@include pad(.5em);
+		border: 1px solid transparent;
 	}
 }
 
