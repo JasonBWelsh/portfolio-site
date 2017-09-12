@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400");
 @import url("https://fonts.googleapis.com/css?family=Exo");
-.header-down-arrow:hover {
+.header-down-arrow:hover, .skills-list li {
   cursor: pointer; }
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */

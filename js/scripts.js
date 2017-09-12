@@ -37,6 +37,7 @@ skillsList.addEventListener('click', (e) => {
 	let target = e.target;
 	if (target.tagName === 'LI') {
 		let skillSpan = target.firstElementChild;
+		skillSpan.classList.add("grow-skill");
 		function shrinkSkillSpan() {
 			skillSpan.classList.remove("grow-skill");
 		}
