@@ -59,13 +59,13 @@
 }
 
 .about-text {
-	@include margin(1em 0 0);
+	/* @include margin(1em 0 0); */
 	@include pad(1em);
 	text-align: center;
 	line-height: 2;
 	h2 {
-		@include margin(0 0 1em);
-		border: 1px solid $light;
+		@include margin(0 0 2em);
+		/* border: 1px solid $light; */
 		color: $light;
 	}
 	p {
@@ -111,7 +111,20 @@
 	@include justify-content(#{center});
 	@include align-items(#{center});
 	@include margin(2em 0 0);
-	background: rgba($black, .3);
+	/* background: rgba($black, .3); */
+}
+
+.about-card-img {
+	height: 13em;
+	width: 13em;
+	@include margin(1em 0 0);
+	@include border-radius(50%);
+	filter: grayscale(1);
+	@include transition(all .4s ease);
+	&:hover {
+		transform: scale(1.2);
+		filter: none;
+	}
 }
 //classes to set/remove in JS for about nav display
 .about-card {
