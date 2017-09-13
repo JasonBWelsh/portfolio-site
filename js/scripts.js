@@ -26,11 +26,27 @@ for (let i = 0; i < aboutCards.length; i += 1) {
 	}
 }
 
+// add .highlight-about class to first about list item on page load
+function highlightAboutCode() {
+	let LIS = aboutList.children;
+	LIS[0].classList.add("highlight-about");
+}
+highlightAboutCode();
 
 // click about list to show about card
 aboutList.addEventListener('click', (e) => {
 	if (e.target.tagName === 'LI') {
 		let LI = e.target;
+		// add highlighted class on LI when clicked
+		let LIS = aboutList.children;
+		// remove .highlight-about from about LIS when a click happens
+		for (let i = 0; i < LIS.length; i += 1) {
+			if (LIS[i].classList.contains("highlight-about")) {
+				LIS[i].classList.remove("highlight-about");
+			}
+		}
+		// add .highlight-about to clicked LI
+		LI.classList.add("highlight-about");
 		// loop over about-cards and remove .display class
 		for ( let i = 0; i < aboutCards.length; i += 1) {
 			if (aboutCards[i].classList.contains("display")) {

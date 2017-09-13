@@ -96,7 +96,6 @@
 		@extend %cursor-pointer;
 		@include transition(all .4s ease);
 		&:hover {
-			/* transform: scale(1.1); */
 			background: rgba($white, .1);
 		}
 	}
@@ -108,7 +107,6 @@
 	@include justify-content(#{center});
 	@include align-items(#{center});
 	@include margin(2em 0 0);
-	/* background: rgba($black, .3); */
 }
 
 .about-card-img {
@@ -129,4 +127,14 @@
 }
 .display {
 	display: block;
+}
+
+.highlight-about {
+	background: none;
+	transform: scale(1.1) translateY(-.5em);
+	border-color: $light;
+	color: $light;
+	@media (min-width: $break-m) {
+		transform: scale(1.3) translateY(-.5em);
+	}
 }
