@@ -49,10 +49,6 @@
 	max-width: 12em;
 	@include border-radius(50%);
 	@include transition(all .4s ease-out);
-	@media (min-width: $break-m) {
-		max-height: 15em;
-		max-width: 15em;
-	}
 	&:hover {
 		transform: scale(1.1);
 	}
