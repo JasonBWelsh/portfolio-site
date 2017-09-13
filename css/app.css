@@ -801,7 +801,7 @@ ul, ol {
 
 .highlight-about {
   background: none;
-  transform: scale(1.1) translateY(-0.5em);
+  transform: scale(1.1);
   border-color: #b3cde0;
   color: #b3cde0; }
   @media (min-width: 768px) {
