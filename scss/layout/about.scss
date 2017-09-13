@@ -55,13 +55,11 @@
 }
 
 .about-text {
-	/* @include margin(1em 0 0); */
 	@include pad(1em);
 	text-align: center;
 	line-height: 2;
 	h2 {
 		@include margin(0 0 2em);
-		/* border: 1px solid $light; */
 		color: $light;
 	}
 	p {
@@ -121,6 +119,17 @@
 		filter: none;
 	}
 }
+
+span.dog-link { 
+	color: $light;
+	@include transition(all .4s ease);
+	@extend %cursor-pointer;
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+
+
 //classes to set/remove in JS for about nav display
 .about-card {
 	display: none;

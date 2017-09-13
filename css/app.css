@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400");
 @import url("https://fonts.googleapis.com/css?family=Exo");
-.header-down-arrow:hover, .about-list li, .skills-list li {
+.header-down-arrow:hover, .about-list li, span.dog-link, .skills-list li {
   cursor: pointer; }
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -683,13 +683,11 @@ ul, ol {
     transform: scale(1.1); }
 
 .about-text {
-  /* @include margin(1em 0 0); */
   padding: 1em;
   text-align: center;
   line-height: 2; }
   .about-text h2 {
     margin: 0 0 2em;
-    /* border: 1px solid $light; */
     color: #b3cde0; }
   .about-text p {
     margin: 0;
@@ -792,6 +790,16 @@ ul, ol {
   .about-card-img:hover {
     transform: scale(1.2);
     filter: none; }
+
+span.dog-link {
+  color: #b3cde0;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+  span.dog-link:hover {
+    transform: scale(1.1); }
 
 .about-card {
   display: none; }

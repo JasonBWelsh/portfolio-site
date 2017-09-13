@@ -8,17 +8,14 @@ $(document).ready(function() {
 
 	const aboutText = document.querySelector(".about-text");
 	const aboutList = document.querySelector(".about-list");
+	const aboutCardContainer = document.querySelector(".about-card-container");
 	const aboutCards = aboutText.querySelectorAll(".about-card");
+	const dogLink = document.querySelector(".dog-link");
 
 
 	const skillsList = document.querySelector(".skills-list");
 
-	//fade in header
-	/*function fadeInHeaderEls() {
-		header.classList.remove("hide");
-		header.classList.add("show");
-	}
-	fadeInHeaderEls();*/
+
 
 	(function() {
 		header.classList.remove("hide");
@@ -76,6 +73,24 @@ $(document).ready(function() {
 		}
 	});
 
+	// click .dog-link to change puppy image in .dog-card-img
+	aboutCardContainer.addEventListener('click', (e) => {
+		if (e.target.classList.contains("dog-link")) {
+			let target = e.target;
+			let cardImg = document.querySelector(".dog-card-img");
+			let arwen = 'img/arwenFaceSmall.jpg';
+			let moya = 'img/moyaFaceSmall.jpg';
+			let puppies = 'img/puppiesTurtleSmall.jpg';
+			// check text content of span and set relevant img
+			if (target.textContent === 'Arwen') {
+				cardImg.setAttribute('src', arwen);
+			} else if (target.textContent === 'Moya') {
+				cardImg.setAttribute('src', moya);
+			} else if (target.textContent !== 'Arwen' && target.textContent !== 'Moya') {
+				cardImg.setAttribute('src', puppies);
+			}
+		}
+	});
 
 
 	// set random skills list item change
