@@ -752,7 +752,8 @@ ul, ol {
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease; }
     .about-list li:hover {
-      transform: scale(1.1); }
+      /* transform: scale(1.1); */
+      background: rgba(255, 255, 255, 0.1); }
 
 .about-card-container {
   display: -webkit-box;
@@ -828,17 +829,16 @@ ul, ol {
 .tools-container {
   margin: 0 0 0.5em; }
   .tools-container:hover .tools {
-    transform: rotateX(180deg); }
+    transform: scale(0.8); }
 
 .tools {
   height: 3em;
-  width: 3em; }
-  .tools, .tools * {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -ms-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease; }
+  width: 3em;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
 
 .skills-list {
   -webkit-flex-direction: row;

@@ -15,16 +15,14 @@
 .tools-container {
 	@include margin(0 0 .5em);
 	&:hover .tools {
-		transform: rotateX(180deg);
+		transform: scale(0.8);
 	}
 }
 
 .tools {
 	height: 3em;
 	width: 3em;
-	&, & * {
-		@include transition(all .4s ease);
-	}
+	@include transition(all .4s ease);
 }
 
 .skills-list {
