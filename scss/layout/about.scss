@@ -96,7 +96,7 @@
 		width: 4.5em;
 		color: $white;
 		font-size: .9rem;
-		background: $dark;
+		background: rgba($dark, .4);
 		@extend %cursor-pointer;
 		@include transition(all .4s ease);
 		&:hover {
