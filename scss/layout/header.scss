@@ -36,15 +36,26 @@
 }
 
 .main-nav {
-	@media (min-width: #{$break-m}) {
+	/* @media (min-width: #{$break-m}) {
 		@include flexbox();
 		@include justify-content(#{center});
+	} */
+	display: none;
+	font-size: .9rem;
+	@media (min-width: $break-m) {
+		display: block;
+		position: fixed;
+		top: 10%;
+		left: 0;
+		/* background: $dark; */
+		@include border-radius(5em);
+		border: 1px solid $white;
 	}
 }
 
 .main-nav-list {
 	margin-top: 1em;
-	@media (min-width: $break-m) {
+	/* @media (min-width: $break-m) {
 		@include flexbox();
 		@include flex-direction(#{row});
 		@include justify-content(#{space-between});
@@ -53,28 +64,39 @@
 	}
 	@media (min-width: #{$break-l}) {
 		width: 60%;
-	}
+	} */
 }
 
 .main-nav-list li {
 	@include pad(1em .5em);
 	@include transition(all .4s ease);
 	&:hover {
-		transform: translateX(.5em);
+		transform: translateX(.2em);
+	}
+	@media (min-width: $break-m) {
+		/* border: 1px solid $white;
+		@include border-radius(5em); */
+		@include pad(.5em .25em);
+		margin-bottom: 1em;
 	}
 	a {
 		@include pad(1em .5em);
-		color: $light;
+		color: $white;
 		@include transition(all .4s ease);
+		@media (min-width: $break-m) {
+			@include pad(1em .5em);
+		}
 		&:hover {
-			color: $white;
-			transform: translateX(1em);
+			color: $light;
+			/* transform: translateX(1em); */
 		}
 	}
 }
 
 .header-arrow-container {
+	display: none;
 	@media (min-width: $break-m) {
+		display: block;
 		@include margin(3em 0 1em 0);
 	}
 	@media (min-width: $break-l) {
