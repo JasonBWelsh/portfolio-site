@@ -45,11 +45,11 @@
 	@media (min-width: $break-m) {
 		display: block;
 		position: fixed;
-		top: 10%;
+		top: 20%;
 		left: 0;
-		/* background: $dark; */
+		background: $dark;
 		@include border-radius(5em);
-		border: 1px solid $white;
+		border: 1px solid $light;
 	}
 }
 
