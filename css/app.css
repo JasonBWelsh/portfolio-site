@@ -503,11 +503,11 @@ ul, ol {
     .main-nav {
       display: block;
       position: fixed;
-      top: 20%;
+      top: 0;
       left: 0;
       background: rgba(50, 50, 50, 0.4);
       /* @include border-radius(1em); */
-      border: 1px solid #fff; } }
+      /* border: 1px solid $white; */ } }
 
 .main-nav-list {
   margin-top: 1em;
@@ -536,7 +536,10 @@ ul, ol {
       /* border: 1px solid $white;
       @include border-radius(5em); */
       padding: 0.5em 0.25em;
-      margin-bottom: 1em; } }
+      margin-bottom: 1em;
+      background: rgba(50, 50, 50, 0.7); }
+      .main-nav-list li:hover {
+        transform: translateX(1em); } }
   .main-nav-list li a {
     padding: 1em 0.5em;
     color: #fff;

@@ -46,11 +46,11 @@
 	@media (min-width: $break-m) {
 		display: block;
 		position: fixed;
-		top: 20%;
+		top: 0;
 		left: 0;
 		background: rgba($dark, .4);
 		/* @include border-radius(1em); */
-		border: 1px solid $white;
+		/* border: 1px solid $white; */
 	}
 }
 
@@ -79,6 +79,10 @@
 		@include border-radius(5em); */
 		@include pad(.5em .25em);
 		margin-bottom: 1em;
+		background: rgba($dark, .7);
+		&:hover {
+		transform: translateX(1em);
+	}
 	}
 	a {
 		@include pad(1em .5em);
