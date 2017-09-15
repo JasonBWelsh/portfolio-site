@@ -4,6 +4,7 @@
 	@include justify-content(#{center});
 	@include align-items(#{center});
 	@include flex-direction(#{column});
+	background: $madison;
 }
 
 .portrait-div {
