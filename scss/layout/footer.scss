@@ -8,15 +8,11 @@
 	@include pad(1em);
 	background: $dark;
 	@media (min-width: $break-m) {
-		top: 50%;
-		bottom: auto;
-		left: 0;
-		right: auto;
+		bottom: 0;
+		left: auto;
+		right: 0;
 		border: none;
 		background: none;
-	}
-	@media (min-width: $break-l) {
-		top: 60%;
 	}
 }
 
