@@ -442,7 +442,7 @@ ul, ol {
   -o-transition: opacity 2s ease;
   transition: opacity 2s ease;
   background: rgba(0, 0, 0, 0.5);
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), #000, rgba(0, 0, 0, 0.5)); }
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), #000, rgba(0, 0, 0, 0.3)); }
   @media (min-width: 768px) {
     .main-header {
       height: 100vh; } }
