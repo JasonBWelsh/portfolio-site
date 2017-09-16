@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+	const body = document.querySelector("body");
 	const header = document.querySelector(".main-header");
 	const mainNav = document.querySelector(".main-nav");
 	const nameIcon = document.querySelector(".name-icon");
@@ -74,8 +75,7 @@ $(document).ready(function() {
 	});
 
 	// click .dog-link to change puppy image in .dog-card-img
-	aboutCardContainer.addEventListener('click', (e) => {
-		if (e.target.classList.contains("dog-link")) {
+	body.addEventListener('click', (e) => {
 			let target = e.target;
 			let cardImg = document.querySelector(".dog-card-img");
 			let arwen = 'img/arwenFaceSmall.jpg';
@@ -89,7 +89,6 @@ $(document).ready(function() {
 			} else if (target.textContent !== 'Arwen' && target.textContent !== 'Moya') {
 				cardImg.setAttribute('src', puppies);
 			}
-		}
 	});
 
 
