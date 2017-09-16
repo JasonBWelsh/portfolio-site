@@ -1,0 +1,38 @@
+.portfolio {
+	@include pad(1em);
+	@include flexbox();
+	@include justify-content(#{center});
+	@include align-items(#{center});
+	@include flex-direction(#{column});
+	background: $madison;
+	h2 {
+		@include margin(1em 0 .5em);
+	}
+}
+
+.project-list {
+	@include flexbox();
+	@include flex-wrap(#{wrap});
+	@include justify-content(#{space-around});
+	@include align-items(#{center});
+	li {
+		@include flexbox();
+		@include flex-direction(#{column});
+		@include justify-content(#{center});
+		@include align-items(#{center});
+		@include margin(1em);
+		@include pad(1em);
+		background: $light-purple;
+		@media (min-width: $break-m) {
+			flex: 1 20%;
+		}
+	}
+	h3 {
+		@include margin(1em 0);
+	}
+}
+
+.project-img {
+	width: 15em;
+	max-width: 15em;
+}

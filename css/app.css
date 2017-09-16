@@ -804,7 +804,7 @@ ul, ol {
 
 span.dog-link {
   color: #fff;
-  background: #323232;
+  background: #2C3E50;
   padding: 0.1em 0.5em;
   -webkit-border-radius: 0.5em;
   border-radius: 0.5em;
@@ -935,6 +935,81 @@ span.dog-link {
 
 .grow-skill {
   transform: scale(1.5); }
+
+.portfolio {
+  padding: 1em;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #2C3E50; }
+  .portfolio h2 {
+    margin: 1em 0 0.5em; }
+
+.project-list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center; }
+  .project-list li {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    margin: 1em;
+    padding: 1em;
+    background: #363F5C; }
+    @media (min-width: 768px) {
+      .project-list li {
+        flex: 1 20%; } }
+  .project-list h3 {
+    margin: 1em 0; }
+
+.project-img {
+  width: 15em;
+  max-width: 15em; }
 
 .main-footer {
   display: -webkit-box;

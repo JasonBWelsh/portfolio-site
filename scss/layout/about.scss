@@ -135,7 +135,7 @@
 
 span.dog-link { 
 	color: $white;
-	background: $dark;
+	background: $madison;
 	@include pad(.1em .5em);
 	@include border-radius(.5em);
 	@include transition(all .4s ease);
