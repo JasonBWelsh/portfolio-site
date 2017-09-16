@@ -433,13 +433,6 @@ ul, ol {
 .show {
   opacity: 1; }
 
-/* .about,
-.skills,
-.main-footer {
-	border-top: 1px solid $madison;
-}
-
- */
 .main-header {
   padding: 1em;
   text-align: center;
@@ -785,8 +778,7 @@ ul, ol {
   -ms-align-items: center;
   align-items: center;
   margin: 2em 0 0;
-  /* background: rgba($black, .1); */
-  background: rgba(50, 50, 50, 0.5);
+  background: rgba(50, 50, 50, 0.3);
   border: 1px solid #323232;
   -webkit-border-radius: 0.5em;
   border-radius: 0.5em;

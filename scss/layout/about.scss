@@ -106,8 +106,7 @@
 	@include justify-content(#{center});
 	@include align-items(#{center});
 	@include margin(2em 0 0);
-	/* background: rgba($black, .1); */
-	background: rgba($dark, .5);
+	background: rgba($dark, .3);
 	border: 1px solid $dark;
 	@include border-radius(.5em);
 	padding-bottom: 1em;
