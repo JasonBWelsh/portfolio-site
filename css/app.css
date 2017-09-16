@@ -433,11 +433,13 @@ ul, ol {
 .show {
   opacity: 1; }
 
-.about,
+/* .about,
 .skills,
 .main-footer {
-  border-top: 1px solid #2C3E50; }
+	border-top: 1px solid $madison;
+}
 
+ */
 .main-header {
   padding: 1em;
   text-align: center;
@@ -944,7 +946,8 @@ span.dog-link {
   left: 0;
   right: 0;
   padding: 1em;
-  background: #000; }
+  background: #000;
+  border-top: 1px solid #fff; }
   @media (min-width: 768px) {
     .main-footer {
       bottom: 0;

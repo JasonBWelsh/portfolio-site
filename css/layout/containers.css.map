@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA;;;;;;GAMG",
+"sources": ["../../scss/layout/containers.scss"],
 "names": [],
 "file": "containers.css"
 }
