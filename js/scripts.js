@@ -86,7 +86,7 @@ $(document).ready(function() {
 				cardImg.setAttribute('src', arwen);
 			} else if (target.textContent === 'Moya') {
 				cardImg.setAttribute('src', moya);
-			} else if (target.textContent !== 'Arwen' && target.textContent !== 'Moya') {
+			} else  {
 				cardImg.setAttribute('src', puppies);
 			}
 	});
