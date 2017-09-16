@@ -561,10 +561,12 @@ ul, ol {
 
 .header-arrow-container {
   /* display: none; */
+  margin: 4em 0 7em 0;
   margin: 10em 0 7em 0; }
   @media (min-width: 768px) {
     .header-arrow-container {
-      /* display: block; */ } }
+      /* display: block; */
+      margin: 10em 0 7em 0; } }
   @media (min-width: 992px) {
     .header-arrow-container {
       /* @include margin(5em 0 1em 0); */ } }

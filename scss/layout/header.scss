@@ -104,10 +104,11 @@
 
 .header-arrow-container {
 	/* display: none; */
+	@include margin(4em 0 7em 0);
 	@include margin(10em 0 7em 0);
 	@media (min-width: $break-m) {
 		/* display: block; */
-		
+		@include margin(10em 0 7em 0);
 	}
 	@media (min-width: $break-l) {
 		/* @include margin(5em 0 1em 0); */
