@@ -3,6 +3,10 @@
 	text-align: center;
 	@include transition(opacity 2s ease);
 	background: rgba($black, .5);
+	background: linear-gradient(to right, rgba($black, .5), $black, rgba($black, .5));
+	@media (min-width: $break-m) {
+		height: 100vh;
+	}
 }
 
 .name {
@@ -99,13 +103,14 @@
 }
 
 .header-arrow-container {
-	display: none;
+	/* display: none; */
+	@include margin(10em 0 7em 0);
 	@media (min-width: $break-m) {
-		display: block;
-		@include margin(3em 0 1em 0);
+		/* display: block; */
+		
 	}
 	@media (min-width: $break-l) {
-		@include margin(5em 0 1em 0);
+		/* @include margin(5em 0 1em 0); */
 	}
 }
 
