@@ -17,9 +17,6 @@
 		background: rgb(0, 0, 0);
 		background: rgba($black, .5);
 		padding: .3em;
-		@media (min-width: $break-m) {
-			/* @include font-styles($size: 1.3rem); */
-		}
 	}
 	span.hi {
 		top: 33%;
@@ -46,8 +43,8 @@
 
 .portrait {
 	@include margin(2em 0 0);
-	max-height: 12em;
-	max-width: 12em;
+	max-height: 10em;
+	max-width: 10em;
 	@include border-radius(50%);
 	@include transition(all .4s ease-out);
 	&:hover {
@@ -91,7 +88,7 @@
 		width: 4.5em;
 		color: $white;
 		font-size: .9rem;
-		background: rgba($dark, .4);
+		background: rgba($light-purple, .9);
 		@extend %cursor-pointer;
 		@include transition(all .4s ease);
 		&:hover {
@@ -106,7 +103,16 @@
 	@include justify-content(#{center});
 	@include align-items(#{center});
 	@include margin(2em 0 0);
+	/* background: rgba($black, .1); */
+	background: rgba($dark, .5);
+	border: 1px solid $dark;
+	@include border-radius(.5em);
+	padding-bottom: 1em;
+	h3 {
+		margin-top: 1em;
+	}
 }
+
 
 .about-card-img {
 	height: 13em;

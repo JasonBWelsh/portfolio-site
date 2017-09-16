@@ -63,12 +63,9 @@
 		transform: translateX(.2em);
 	}
 	@media (min-width: $break-m) {
-		border: 1px solid $white;
-		@include border-radius(5em); 
 		@include margin(0 .5em);
 		@include pad(.5em .25em);
-		margin-bottom: 1em;
-		background: rgba($dark, .7);
+		/* background: rgba($black, .4); */
 		border: 1px solid $white;
 		&:hover {
 		transform: translateX(1em);
