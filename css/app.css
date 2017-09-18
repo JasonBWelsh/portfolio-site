@@ -3,6 +3,10 @@
 .header-down-arrow:hover, .about-list li, span.dog-link, .skills-list li {
   cursor: pointer; }
 
+/* medium purple */
+/*sidebar */
+/* for top graph */
+/*button and selected */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1010,6 +1014,9 @@ span.dog-link {
       width: 22em; } }
   .project:hover {
     transform: rotate3d(0, 1, 0, 180deg); }
+  .project h3 {
+    margin: 1em 0;
+    color: #a111af; }
 
 .project-desc {
   position: absolute;
@@ -1017,8 +1024,8 @@ span.dog-link {
   right: 0;
   bottom: 0;
   left: 0;
-  background: #b3cde0;
-  color: #22313F;
+  background: #000;
+  color: #42d4f4;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -1058,6 +1065,38 @@ span.dog-link {
 
 .project-img {
   transform: rotate(); }
+
+.project-button-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  margin: auto 0 1em; }
+
+.project-button {
+  margin: 0 0.5em;
+  padding: 0.5em;
+  background: #000;
+  color: #e8ff1e;
+  border: 1px solid #e8ff1e;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+  .project-button:hover {
+    color: #fff;
+    transform: scale(1.1); }
 
 .main-footer {
   display: -webkit-box;

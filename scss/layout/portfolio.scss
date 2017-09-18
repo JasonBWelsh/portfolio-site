@@ -38,6 +38,10 @@
   	&:hover {
   		transform: rotate3d(0, 1, 0, 180deg);
   	}
+  	h3 {
+  		@include margin(1em 0);
+  		color: $bright-purple;
+  	}
 }
 
 .project-desc {
@@ -46,8 +50,8 @@
 	right: 0;
 	bottom: 0; 
 	left: 0;
-	background: $light;
-	color: $ebony-clay;
+	background: $black;
+	color: $aqua-blue;
 	@include flexbox();
 	@include flex-direction(#{column});
 	@include justify-content(#{center});
@@ -75,4 +79,24 @@
 
 .project-img {
 	transform: rotate();
+}
+
+.project-button-container {
+	@include flexbox();
+	@include flex-direction(#{row});
+	@include justify-content(#{center});
+	@include margin(auto 0 1em);
+}
+
+.project-button {
+	@include margin(0 .5em);
+	@include pad(.5em);
+	background: $black;
+	color: $yellow;
+	border: 1px solid $yellow;
+	@include transition(all .4s ease);
+	&:hover {
+		color: $white;
+		transform: scale(1.1);
+	}
 }
