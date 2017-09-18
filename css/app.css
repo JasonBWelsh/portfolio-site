@@ -1019,7 +1019,8 @@ span.dog-link {
     margin: 1em 0;
     color: #fff; }
   .project p {
-    margin: auto 0; }
+    margin: auto 0;
+    font-size: .9rem; }
 
 .project-desc {
   position: absolute;
