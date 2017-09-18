@@ -1016,7 +1016,9 @@ span.dog-link {
     transform: rotate3d(0, 1, 0, 180deg); }
   .project h3 {
     margin: 1em 0;
-    color: #a111af; }
+    color: #fff; }
+  .project p {
+    margin: auto 0; }
 
 .project-desc {
   position: absolute;
@@ -1096,6 +1098,7 @@ span.dog-link {
   transition: all 0.4s ease; }
   .project-button:hover {
     color: #fff;
+    border-color: #fff;
     transform: scale(1.1); }
 
 .main-footer {

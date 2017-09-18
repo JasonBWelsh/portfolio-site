@@ -40,7 +40,10 @@
   	}
   	h3 {
   		@include margin(1em 0);
-  		color: $bright-purple;
+  		color: $white;
+  	}
+  	p {
+  		@include margin(auto 0);
   	}
 }
 
@@ -97,6 +100,7 @@
 	@include transition(all .4s ease);
 	&:hover {
 		color: $white;
+		border-color: $white;
 		transform: scale(1.1);
 	}
 }
