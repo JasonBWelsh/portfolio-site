@@ -65,7 +65,7 @@
 	@media (min-width: $break-m) {
 		@include margin(0 .5em);
 		@include pad(.5em .25em);
-		border: 1px solid $yellow;
+		border: 1px solid $white;
 		background: $black;
 		&:hover {
 		transform: translateX(1em) scale(1.1);
