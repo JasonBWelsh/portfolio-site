@@ -65,11 +65,12 @@
 	@media (min-width: $break-m) {
 		@include margin(0 .5em);
 		@include pad(.5em .25em);
-		border: 1px solid $white;
+		border: 1px solid $yellow;
 		background: $black;
 		&:hover {
 		transform: translateX(1em) scale(1.1);
-	}
+		background: $m-pink;
+		}
 	}
 	a {
 		@include pad(1em .5em);
@@ -79,7 +80,7 @@
 			@include pad(1em .5em);
 		}
 		&:hover {
-			color: $light;
+			/* color: $light; */
 			/* transform: translateX(1em); */
 		}
 	}

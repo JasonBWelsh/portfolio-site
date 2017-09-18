@@ -4,35 +4,75 @@
 	@include justify-content(#{center});
 	@include align-items(#{center});
 	@include flex-direction(#{column});
-	background: $m-pink;
+	background: $madison;
 	h2 {
 		@include margin(1em 0 .5em);
 	}
 }
 
-.project-list {
+.project-wrapper {
+	perpesctive: 700px;
+	perspective-origin: 50% 100%;
 	@include flexbox();
 	@include flex-wrap(#{wrap});
 	@include justify-content(#{space-around});
+	@include align-content(#{space-around});
+}
+
+.project-container img {
+	position: relative;
+}
+
+.project {
+	transition: transform 1s cubic-bezier(.55, -.62, .27, 1.2);
+  	transform-style: preserve-3d;
+  	@include margin(1em);
+  	height: 19em;
+  	width: 19em;
+  	@include border-radius(50%);
+  	@media (min-width: $break-l) {
+  		flex: 1 30%;
+  		height: 22em;
+  		width: 22em;
+  	}
+  	&:hover {
+  		transform: rotate3d(0, 1, 0, 180deg);
+  	}
+}
+
+.project-desc {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0; 
+	left: 0;
+	background: $light;
+	color: $ebony-clay;
+	@include flexbox();
+	@include flex-direction(#{column});
+	@include justify-content(#{center});
 	@include align-items(#{center});
-	li {
-		@include flexbox();
-		@include flex-direction(#{column});
-		@include justify-content(#{center});
-		@include align-items(#{center});
-		@include margin(1em);
-		@include pad(1em);
-		background: $ebony-clay;
-		@media (min-width: $break-m) {
-			flex: 1 20%;
-		}
-	}
-	h3 {
-		@include margin(1em 0);
+	@include pad(1em);
+	p {
+		text-align: center;
 	}
 }
 
+.side-a,
+.side-b {
+  backface-visibility: hidden;
+  @include border-radius(50%)
+}
+
+.side-a {
+	height: 100%;
+	width: 100%;
+}
+
+.side-b {
+  transform: rotateY(180deg);
+}
+
 .project-img {
-	width: 15em;
-	max-width: 15em;
+	transform: rotate();
 }

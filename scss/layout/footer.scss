@@ -7,7 +7,6 @@
 	right: 0;
 	@include pad(1em);
 	background: $black;
-	border-top: 1px solid $white;
 	@media (min-width: $break-m) {
 		bottom: 0;
 		left: auto;
