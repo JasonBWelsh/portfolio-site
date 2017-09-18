@@ -45,7 +45,7 @@
 		position: fixed;
 		top: 0;
 		left: 0;
-		background: rgba($black, .9);
+		background: $black;
 		z-index: 1000;
 	}
 }
@@ -66,6 +66,7 @@
 		@include margin(0 .5em);
 		@include pad(.5em .25em);
 		border: 1px solid $white;
+		background: $black;
 		&:hover {
 		transform: translateX(1em) scale(1.1);
 	}
