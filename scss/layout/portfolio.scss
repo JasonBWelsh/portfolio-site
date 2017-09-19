@@ -24,7 +24,7 @@
 }
 
 .project {
-	transition: transform 1s cubic-bezier(.55, -.62, .27, 1.2);
+	transition: transform .7s ease/* cubic-bezier(.55, -.62, .27, 1.2) */;
   	transform-style: preserve-3d;
   	@include margin(1em);
   	height: 19em;

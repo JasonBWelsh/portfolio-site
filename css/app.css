@@ -995,7 +995,7 @@ span.dog-link {
   position: relative; }
 
 .project {
-  transition: transform 1s cubic-bezier(0.55, -0.62, 0.27, 1.2);
+  transition: transform 0.7s ease;
   transform-style: preserve-3d;
   margin: 1em;
   height: 19em;
