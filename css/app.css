@@ -530,8 +530,7 @@ ul, ol {
       border: 1px solid #fff;
       background: #000; }
       .main-nav-list li:hover {
-        transform: translateX(1em) scale(1.1);
-        background: #502c4a; } }
+        transform: scale(1.2); } }
   .main-nav-list li a {
     padding: 1em 0.5em;
     color: #fff;
@@ -670,13 +669,12 @@ ul, ol {
 
 .portrait {
   margin: 2em 0 0;
-  max-height: 10em;
-  max-width: 10em;
+  max-height: 12em;
+  max-width: 12em;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
-  filter: grayscale(1);
   -webkit-transition: all 0.4s ease-out;
   -moz-transition: all 0.4s ease-out;
   -ms-transition: all 0.4s ease-out;
@@ -686,8 +684,7 @@ ul, ol {
     .portrait {
       margin: 5em 0 0; } }
   .portrait:hover {
-    transform: scale(1.1);
-    filter: none; }
+    transform: scale(1.1); }
 
 .about-text {
   padding: 1em;
@@ -970,7 +967,7 @@ span.dog-link {
   flex-direction: column;
   background: #502c4a; }
   .portfolio h2 {
-    margin: 1em 0 0.5em; }
+    margin: 1em 0; }
 
 .project-wrapper {
   perpesctive: 700px;
@@ -1029,7 +1026,7 @@ span.dog-link {
   bottom: 0;
   left: 0;
   background: #000;
-  color: #42d4f4;
+  color: #e8ff1e;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -1091,8 +1088,8 @@ span.dog-link {
   margin: 0 0.5em;
   padding: 0.5em;
   background: #000;
-  color: #e8ff1e;
-  border: 1px solid #e8ff1e;
+  color: #fff;
+  border: 1px solid #fff;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
@@ -1102,6 +1099,35 @@ span.dog-link {
     color: #fff;
     border-color: #fff;
     transform: scale(1.1); }
+
+.contact {
+  padding: 1em;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .contact h2 {
+    margin: 1em 0; }
+
+.bottom-space {
+  margin: 0 0 103px; }
+  @media (min-width: 768px) {
+    .bottom-space {
+      display: none; } }
 
 .main-footer {
   display: -webkit-box;

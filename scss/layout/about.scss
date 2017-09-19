@@ -43,17 +43,15 @@
 
 .portrait {
 	@include margin(2em 0 0);
-	max-height: 10em;
-	max-width: 10em;
+	max-height: 12em;
+	max-width: 12em;
 	@include border-radius(50%);
-	filter: grayscale(1);
 	@include transition(all .4s ease-out);
 	@media (min-width: $break-m) {
 		@include margin(5em 0 0);
 	}
 	&:hover {
 		transform: scale(1.1);
-		filter: none;
 	}
 }
 

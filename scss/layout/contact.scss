@@ -1,0 +1,17 @@
+.contact {
+	@include pad(1em);
+	@include flexbox();
+	@include justify-content(#{center});
+	@include align-items(#{center});
+	@include flex-direction(#{column});
+	h2 {
+		@include margin(1em 0);
+	}
+}
+
+.bottom-space { // space to show content bc of sticky footer
+	@include margin(0 0 103px);
+	@media (min-width: $break-m) {
+		display: none;
+	}
+}

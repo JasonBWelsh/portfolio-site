@@ -68,8 +68,7 @@
 		border: 1px solid $white;
 		background: $black;
 		&:hover {
-		transform: translateX(1em) scale(1.1);
-		background: $m-pink;
+		transform: scale(1.2);
 		}
 	}
 	a {
