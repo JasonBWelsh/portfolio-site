@@ -60,16 +60,14 @@ $(document).ready(function() {
 			// check LI type and show proper card
 			// check for coding
 			let lis = aboutList.children;
-			if (LI.textContent === 'Coding') {
+			if (LI.textContent === 'Code') {
 				aboutCards[0].classList.add("display");
-			} else if (LI.textContent === 'Health') {
+			} else if (LI.textContent === 'JS') {
 				aboutCards[1].classList.add("display");
-			} else if (LI.textContent === 'Puppies') {
+			} else if (LI.textContent === 'CSS') {
 				aboutCards[2].classList.add("display");
-			} else if (LI.textContent === 'Music') {
-				aboutCards[3].classList.add("display");
 			} else if (LI.textContent === 'Other') {
-				aboutCards[4].classList.add("display");
+				aboutCards[3].classList.add("display");
 			}
 		}
 	});
