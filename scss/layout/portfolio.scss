@@ -6,7 +6,7 @@
 	@include flex-direction(#{column});
 	background: $m-pink;
 	h2 {
-		@include margin(1em 0);
+		@include margin(3em 0);
 	}
 }
 
