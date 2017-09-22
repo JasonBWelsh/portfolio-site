@@ -56,11 +56,12 @@
 }
 
 .about-text {
+	@include margin(0 0 1em);
 	@include pad(1em);
 	text-align: center;
 	line-height: 2;
 	h2 {
-		@include margin(1em 0 2em);
+		@include margin(1em 0);
 		color: $white;
 	}
 	p {
@@ -69,6 +70,7 @@
 	}
 	@media (min-width: $break-m) {
 		width: 80%;
+		@include margin(0 0 2em);
 	}
 	@media (min-width: $break-l) {
 		width: 60%;
