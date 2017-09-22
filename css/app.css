@@ -530,7 +530,7 @@ ul, ol {
       border: 1px solid #fff;
       background: #000; }
       .main-nav-list li:hover {
-        transform: scale(1.2); } }
+        transform: scale(1.1); } }
   .main-nav-list li a {
     padding: 1em 0.5em;
     color: #fff;
