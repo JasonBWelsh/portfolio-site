@@ -784,6 +784,7 @@ ul, ol {
   padding: 1em;
   color: #fff;
   border: 1px solid #fff;
+  background: #3a2c50;
   padding-bottom: 1em; }
   @media (min-width: 768px) {
     .about-card-container {

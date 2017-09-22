@@ -115,6 +115,7 @@
 	@include pad(1em);
 	color: $white;
 	border: 1px solid $white;
+	background: $m-purple;
 	padding-bottom: 1em;
 	@media (min-width: $break-m) {
 		margin: 0;
