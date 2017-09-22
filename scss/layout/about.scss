@@ -113,7 +113,7 @@
 	@include justify-content(#{center});
 	@include align-items(#{center});
 	@include margin(2em 0 0);
-	/* background: $white; */
+	@include pad(1em);
 	color: $white;
 	border: 1px solid $white;
 	padding-bottom: 1em;
@@ -122,9 +122,6 @@
 	}
 	h3 {
 		margin-top: 1em;
-		@media (min-width: $break-m) {
-			margin-top: 3em;
-		}
 	}
 }
 

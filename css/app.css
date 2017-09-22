@@ -782,7 +782,7 @@ ul, ol {
   -ms-align-items: center;
   align-items: center;
   margin: 2em 0 0;
-  /* background: $white; */
+  padding: 1em;
   color: #fff;
   border: 1px solid #fff;
   padding-bottom: 1em; }
@@ -791,9 +791,6 @@ ul, ol {
       margin: 0; } }
   .about-card-container h3 {
     margin-top: 1em; }
-    @media (min-width: 768px) {
-      .about-card-container h3 {
-        margin-top: 3em; } }
 
 .about-card-img {
   height: 13em;
