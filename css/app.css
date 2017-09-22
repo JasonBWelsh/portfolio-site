@@ -638,7 +638,7 @@ ul, ol {
   -moz-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  background: #3a2c50; }
+  background: #2C3E50; }
   .portfolio h2 {
     margin: 3em 0; }
 
@@ -673,10 +673,7 @@ ul, ol {
   margin: 1em;
   height: 19em;
   width: 19em;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  background-clip: padding-box;
-  /* stops bg color from leaking outside the border: */
+  /* @include border-radius(50%); */
   border: 1px solid #000; }
   @media (min-width: 992px) {
     .project {
@@ -725,10 +722,7 @@ ul, ol {
 .side-a,
 .side-b {
   backface-visibility: hidden;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  background-clip: padding-box;
-  /* stops bg color from leaking outside the border: */ }
+  /* @include border-radius(50%) */ }
 
 .side-a {
   height: 100%;
@@ -896,7 +890,7 @@ ul, ol {
   -moz-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  background: #502c4a; }
+  background: #2C3E50; }
 
 .portrait-div {
   position: relative;
