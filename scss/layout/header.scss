@@ -2,8 +2,16 @@
 	@include pad(1em);
 	text-align: center;
 	@include transition(opacity 2s ease);
-	background: rgba($black, .5);
-	background: linear-gradient(to right, rgba($black, .3), $black, rgba($black, .3));
+	/* background: $black; */
+	background: linear-gradient(to left, rgba($black, .6), rgba($black, .7), rgba($black, .6)),
+				$black url(../img/puppiesSnow.jpg) no-repeat center center fixed;
+				
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	/* background: rgba($black, .5); */
+	/* background: linear-gradient(to right, rgba($black, .3), $black, rgba($black, .3)); */
 	@media (min-width: $break-m) {
 		height: 100vh;
 	}

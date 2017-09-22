@@ -445,8 +445,14 @@ ul, ol {
   -ms-transition: opacity 2s ease;
   -o-transition: opacity 2s ease;
   transition: opacity 2s ease;
-  background: rgba(0, 0, 0, 0.5);
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), #000, rgba(0, 0, 0, 0.3)); }
+  /* background: $black; */
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), #000 url(../img/puppiesSnow.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* background: rgba($black, .5); */
+  /* background: linear-gradient(to right, rgba($black, .3), $black, rgba($black, .3)); */ }
   @media (min-width: 768px) {
     .main-header {
       height: 100vh; } }
@@ -632,7 +638,7 @@ ul, ol {
   -moz-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  background: #502c4a; }
+  background: #3a2c50; }
   .portfolio h2 {
     margin: 3em 0; }
 
