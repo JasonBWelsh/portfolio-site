@@ -742,7 +742,6 @@ ul, ol {
     -moz-align-items: center;
     -ms-align-items: center;
     align-items: center;
-    padding: 1em 0.5em;
     -webkit-border-radius: 5em;
     border-radius: 5em;
     background-clip: padding-box;
@@ -760,7 +759,7 @@ ul, ol {
     transition: all 0.4s ease; }
     @media (min-width: 768px) {
       .about-list li:hover {
-        transform: rotate(-15deg); } }
+        background: #344b60; } }
 
 .about-card-container {
   display: -webkit-box;
@@ -833,13 +832,8 @@ span.dog-link {
   display: block; }
 
 .highlight-about {
-  background: none;
-  transform: scale(1.1);
-  /* border-color: $light; */
-  /* color: $light; */ }
-  @media (min-width: 768px) {
-    .highlight-about {
-      transform: scale(1.4); } }
+  /* transform: scale(1.1); */
+  background: #3d5871 !important; }
 
 .skills, .skills-list {
   display: -webkit-box;

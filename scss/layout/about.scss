@@ -89,7 +89,6 @@
 		@include flexbox();
 		@include justify-content(#{center});
 		@include align-items(#{center});
-		@include pad(1em .5em);
 		@include border-radius(5em);
 		border: 1px solid $white;
 		background-color: $madison;
@@ -101,7 +100,7 @@
 		@include transition(all .4s ease);
 		@media (min-width: $break-m) {
 			&:hover {
-				transform: rotate(-15deg);
+				background: lighten($ebony-clay, 10%);
 			}
 		}
 	}
@@ -161,11 +160,6 @@ span.dog-link {
 }
 
 .highlight-about {
-	background: none;
-	transform: scale(1.1);
-	/* border-color: $light; */
-	/* color: $light; */
-	@media (min-width: $break-m) {
-		transform: scale(1.4) /* translateY(-.5em) */;
-	} 
+	/* transform: scale(1.1); */
+	background: lighten($ebony-clay, 15%)!important;
 }
