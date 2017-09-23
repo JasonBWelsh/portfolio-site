@@ -10,8 +10,6 @@
 }
 
 .project-wrapper {
-	perpesctive: 700px;
-	perspective-origin: 50% 100%;
 	@include flexbox();
 	@include flex-wrap(#{wrap});
 	@include justify-content(#{space-around});
@@ -19,25 +17,21 @@
 	@include margin(0 0 2em);
 }
 
-.project-container img {
-	position: relative;
-}
+// project cards
 
 .project {
-	transition: transform .7s ease/* cubic-bezier(.55, -.62, .27, 1.2) */;
-  	transform-style: preserve-3d;
+	/* transition: transform .7s ease; */
+	position: relative;
   	@include margin(1em);
   	height: 19em;
   	width: 19em;
   	@include border-radius(.5em);
   	border: 1px solid $ebony-clay;
+  	overflow: hidden;
   	@media (min-width: $break-l) {
   		flex: 1 30%;
   		height: 22em;
   		width: 22em;
-  	}
-  	&:hover {
-  		transform: rotate3d(0, 1, 0, 180deg);
   	}
   	h3 {
   		@include margin(1em 0);
@@ -49,12 +43,12 @@
   	}
 }
 
-.project-desc {
+.project-overlay {
 	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0; 
-	left: 0;
+	left: 0; 
 	background: $black;
 	color: $yellow;
 	@include flexbox();
@@ -67,25 +61,35 @@
 	}
 }
 
-.side-a,
-.side-b {
-  backface-visibility: hidden;
-  @include border-radius(.5em);
+.slide .project-overlay {
+	@include border-radius(.5em);
 }
 
-.side-a {
+
+.project-img {
 	height: 100%;
 	width: 100%;
 }
 
-.side-b {
-  transform: rotateY(180deg);
+// project interactions 
+.slide .project-overlay,
+.slide img {
+  transition: transform .4s ease-out;
 }
 
-.project-img {
-	transform: rotate();
+.slide .project-overlay {
+  transform: translateX(-100%);
 }
 
+.slide:hover .project-overlay {
+  transform: translateX(0);
+}
+
+.slide:hover img {
+  transform: translateX(100%);
+}
+
+// project buttons
 .project-button-container {
 	@include flexbox();
 	@include flex-direction(#{row});
