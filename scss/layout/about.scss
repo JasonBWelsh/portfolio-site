@@ -61,7 +61,7 @@
 	text-align: center;
 	line-height: 2;
 	h2 {
-		@include margin(0 0 1em);
+		@include margin(1em 0 2em);
 		color: $white;
 	}
 	p {
