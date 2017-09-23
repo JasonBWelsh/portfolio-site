@@ -48,8 +48,7 @@
 	right: 0;
 	bottom: 0; 
 	left: 0; 
-	background: $black;
-	color: $yellow;
+	background: $madison;
 	@include flexbox();
 	@include flex-direction(#{column});
 	@include justify-content(#{center});
@@ -99,8 +98,9 @@
 .project-button {
 	@include margin(0 .5em);
 	@include pad(.5em);
-	background: $black;
+	/* background: $black; */
 	color: $white;
+	@include border-radius(50%);
 	border: 1px solid $white;
 	@include transition(all .4s ease);
 	&:hover {
