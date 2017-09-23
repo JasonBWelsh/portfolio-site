@@ -4,7 +4,6 @@
 	@include justify-content(#{center});
 	@include align-items(#{center});
 	@include flex-direction(#{column});
-	background: $madison;
 	h2 {
 		@include margin(3em 0);
 	}
@@ -30,7 +29,7 @@
   	height: 19em;
   	width: 19em;
   	/* @include border-radius(50%); */
-  	border: 1px solid $black;
+  	border: 1px solid $m-pink;
   	@media (min-width: $break-l) {
   		flex: 1 30%;
   		height: 22em;

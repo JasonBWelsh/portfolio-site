@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400");
 @import url("https://fonts.googleapis.com/css?family=Exo");
-.header-down-arrow:hover, .skills-list li, .about-list li, span.dog-link {
+.header-down-arrow:hover, .about-list li, span.dog-link {
   cursor: pointer; }
 
 /* medium purple */
@@ -410,7 +410,7 @@ body {
   color: #fff;
   font-weight: normal;
   line-height: 1.5;
-  background: #22313F; }
+  background: #000; }
 
 a {
   text-decoration: none;
@@ -437,6 +437,12 @@ ul, ol {
 .show {
   opacity: 1; }
 
+.portfolio,
+.skills,
+.about,
+.contact {
+  border-top: 1px solid #502c4a; }
+
 .main-header {
   padding: 1em;
   text-align: center;
@@ -446,13 +452,14 @@ ul, ol {
   -o-transition: opacity 2s ease;
   transition: opacity 2s ease;
   /* background: $black; */
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), #000 url(../img/puppiesSnow.jpg) no-repeat center center fixed;
+  background: linear-gradient(to left, rgba(26, 37, 47, 0.6), rgba(26, 37, 47, 0.7), rgba(26, 37, 47, 0.6)), #000 url(../img/puppiesSnow.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   /* background: rgba($black, .5); */
-  /* background: linear-gradient(to right, rgba($black, .3), $black, rgba($black, .3)); */ }
+  /* background: linear-gradient(to right, rgba($black, .3), $black, rgba($black, .3)); */
+  border-bottom: 1px solid #000; }
   @media (min-width: 768px) {
     .main-header {
       height: 100vh; } }
@@ -637,8 +644,7 @@ ul, ol {
   -webkit-flex-direction: column;
   -moz-flex-direction: column;
   -ms-flex-direction: column;
-  flex-direction: column;
-  background: #2C3E50; }
+  flex-direction: column; }
   .portfolio h2 {
     margin: 3em 0; }
 
@@ -674,7 +680,7 @@ ul, ol {
   height: 19em;
   width: 19em;
   /* @include border-radius(50%); */
-  border: 1px solid #000; }
+  border: 1px solid #502c4a; }
   @media (min-width: 992px) {
     .project {
       flex: 1 30%;
@@ -846,13 +852,12 @@ ul, ol {
     transition: all 0.5s ease;
     border: 1px solid #fff;
     width: 6em;
-    overflow: visible; }
-    .skills-list li:hover span.skill {
-      border: 1px solid #fff;
-      -webkit-border-radius: 50%;
-      border-radius: 50%;
-      background-clip: padding-box;
-      /* stops bg color from leaking outside the border: */ }
+    overflow: visible;
+    /* @extend %cursor-pointer; */
+    /* &:hover span.skill {
+    	border: 1px solid $white;
+    	@include border-radius(50%);
+    } */ }
   .skills-list span.skill {
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
@@ -889,8 +894,7 @@ ul, ol {
   -webkit-flex-direction: column;
   -moz-flex-direction: column;
   -ms-flex-direction: column;
-  flex-direction: column;
-  background: #2C3E50; }
+  flex-direction: column; }
 
 .portrait-div {
   position: relative;
@@ -933,6 +937,7 @@ ul, ol {
   border-radius: 50%;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
+  border: 1px solid #502c4a;
   -webkit-transition: all 0.4s ease-out;
   -moz-transition: all 0.4s ease-out;
   -ms-transition: all 0.4s ease-out;
@@ -940,7 +945,7 @@ ul, ol {
   transition: all 0.4s ease-out; }
   @media (min-width: 768px) {
     .portrait {
-      margin: 5em 0 0; } }
+      margin: 3em 0 0; } }
   .portrait:hover {
     transform: scale(1.1); }
 
@@ -1004,8 +1009,8 @@ ul, ol {
     border-radius: 5em;
     background-clip: padding-box;
     /* stops bg color from leaking outside the border: */
-    border: 1px solid #fff;
-    background-color: #2C3E50;
+    /* border: 1px solid $white; */
+    background: #22313F;
     height: 4.5em;
     width: 4.5em;
     color: #fff;
@@ -1041,14 +1046,19 @@ ul, ol {
   margin: 2em 0 0;
   padding: 1em;
   color: #fff;
-  border: 1px solid #fff;
-  background: #3a2c50;
-  padding-bottom: 1em; }
+  /* border: 1px solid $white; */
+  -webkit-border-radius: 5em;
+  border-radius: 5em;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  background: #502c4a;
+  padding-bottom: 1em;
+  /* h3 {
+  	margin-top: 1em;
+  } */ }
   @media (min-width: 768px) {
     .about-card-container {
       margin: 0; } }
-  .about-card-container h3 {
-    margin-top: 1em; }
 
 .about-card-img {
   height: 13em;

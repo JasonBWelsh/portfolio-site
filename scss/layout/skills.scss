@@ -44,11 +44,11 @@
 		border: 1px solid $white;
 		width: 6em;
 		overflow: visible; // for clicked span size
-		@extend %cursor-pointer;
-		&:hover span.skill {
+		/* @extend %cursor-pointer; */
+		/* &:hover span.skill {
 			border: 1px solid $white;
 			@include border-radius(50%);
-		}
+		} */
 	}
 	span.skill {
 		@include transition(all .4s ease);
