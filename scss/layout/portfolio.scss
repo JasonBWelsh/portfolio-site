@@ -16,6 +16,7 @@
 	@include flex-wrap(#{wrap});
 	@include justify-content(#{space-around});
 	@include align-content(#{space-around});
+	@include margin(0 0 2em);
 }
 
 .project-container img {

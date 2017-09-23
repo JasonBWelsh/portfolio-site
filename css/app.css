@@ -452,7 +452,7 @@ ul, ol {
   -o-transition: opacity 2s ease;
   transition: opacity 2s ease;
   /* background: $black; */
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), #000 url(../img/puppiesSnow.jpg) no-repeat center center fixed;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), #000 url(../img/puppiesSnow.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -668,7 +668,8 @@ ul, ol {
   -webkit-align-content: space-around;
   -moz-align-content: space-around;
   -ms-align-content: space-around;
-  align-content: space-around; }
+  align-content: space-around;
+  margin: 0 0 2em; }
 
 .project-container img {
   position: relative; }
@@ -955,7 +956,7 @@ ul, ol {
   text-align: center;
   line-height: 2; }
   .about-text h2 {
-    margin: 1em 0;
+    margin: 0 0 1em;
     color: #fff; }
   .about-text p {
     margin: 0;
@@ -986,10 +987,10 @@ ul, ol {
   -webkit-align-items: center;
   -moz-align-items: center;
   -ms-align-items: center;
-  align-items: center; }
-  @media (min-width: 768px) {
-    .about-list {
-      margin-bottom: -1em; } }
+  align-items: center;
+  /* @media (min-width: $break-m) {
+  	margin-bottom: -1em;
+  } */ }
   .about-list li {
     display: -webkit-box;
     display: -moz-box;

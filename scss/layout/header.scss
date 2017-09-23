@@ -3,7 +3,7 @@
 	text-align: center;
 	@include transition(opacity 2s ease);
 	/* background: $black; */
-	background: linear-gradient(to left, rgba($black, .6), rgba($black, .7), rgba($black, .6)),
+	background: linear-gradient(to left, rgba($black, .8), rgba($black, .8), rgba($black, .8)),
 				$black url(../img/puppiesSnow.jpg) no-repeat center center fixed;
 				
   	-webkit-background-size: cover;
