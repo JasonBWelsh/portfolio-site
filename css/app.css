@@ -452,7 +452,7 @@ ul, ol {
   -o-transition: opacity 2s ease;
   transition: opacity 2s ease;
   /* background: $black; */
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), #000 url(../img/puppiesSnow.jpg) no-repeat center center fixed;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), #000 url(../img/puppiesSnow.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -511,7 +511,7 @@ ul, ol {
       position: fixed;
       top: 0;
       left: 0;
-      background: #000;
+      background: rgba(0, 0, 0, 0.5);
       z-index: 1000; } }
 
 .main-nav-list {
@@ -987,10 +987,7 @@ ul, ol {
   -webkit-align-items: center;
   -moz-align-items: center;
   -ms-align-items: center;
-  align-items: center;
-  /* @media (min-width: $break-m) {
-  	margin-bottom: -1em;
-  } */ }
+  align-items: center; }
   .about-list li {
     display: -webkit-box;
     display: -moz-box;

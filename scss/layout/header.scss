@@ -3,7 +3,7 @@
 	text-align: center;
 	@include transition(opacity 2s ease);
 	/* background: $black; */
-	background: linear-gradient(to left, rgba($black, .8), rgba($black, .8), rgba($black, .8)),
+	background: linear-gradient(to left, rgba($black, .9), rgba($black, .9), rgba($black, .9)),
 				$black url(../img/puppiesSnow.jpg) no-repeat center center fixed;
 				
   	-webkit-background-size: cover;
@@ -54,7 +54,7 @@
 		position: fixed;
 		top: 0;
 		left: 0;
-		background: $black;
+		background: rgba($black, .5);
 		z-index: 1000;
 	}
 }

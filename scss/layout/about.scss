@@ -82,9 +82,6 @@
 	@include flex-wrap(#{wrap});
 	@include justify-content(#{space-around});
 	@include align-items(#{center});
-	/* @media (min-width: $break-m) {
-		margin-bottom: -1em;
-	} */
 		li {
 		@include flexbox();
 		@include justify-content(#{center});
