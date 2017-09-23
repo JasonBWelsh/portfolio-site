@@ -29,7 +29,7 @@
   	@include margin(1em);
   	height: 19em;
   	width: 19em;
-  	/* @include border-radius(50%); */
+  	@include border-radius(.5em);
   	border: 1px solid $ebony-clay;
   	@media (min-width: $break-l) {
   		flex: 1 30%;
@@ -70,7 +70,7 @@
 .side-a,
 .side-b {
   backface-visibility: hidden;
-  /* @include border-radius(50%) */
+  @include border-radius(.5em);
 }
 
 .side-a {
