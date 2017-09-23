@@ -111,18 +111,13 @@
 	@include margin(2em 0 0);
 	@include pad(1em);
 	color: $white;
-	/* border: 1px solid $white; */
 	@include border-radius(5em);
-	background: $ebony-clay;
+	background: $blue;
 	padding-bottom: 1em;
 	@media (min-width: $break-m) {
 		margin: 0;
 	}
-	/* h3 {
-		margin-top: 1em;
-	} */
 }
-
 
 .about-card-img {
 	height: 13em;
@@ -149,7 +144,6 @@ span.dog-link {
 	}
 }
 
-
 //classes to set/remove in JS for about nav display
 .about-card {
 	display: none;
@@ -159,6 +153,5 @@ span.dog-link {
 }
 
 .highlight-about {
-	/* transform: scale(1.1); */
-	background: lighten($ebony-clay, 15%)!important;
+	background: lighten($blue, 15%)!important;
 }
