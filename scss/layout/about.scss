@@ -45,7 +45,7 @@
 	max-height: 12em;
 	max-width: 12em;
 	@include border-radius(50%);
-	border: 1px solid $m-pink;
+	border: 1px solid $ebony-clay;
 	@include transition(all .4s ease-out);
 	@media (min-width: $break-m) {
 		@include margin(3em 0 0);
@@ -116,7 +116,7 @@
 	color: $white;
 	/* border: 1px solid $white; */
 	@include border-radius(5em);
-	background: $m-pink;
+	background: $ebony-clay;
 	padding-bottom: 1em;
 	@media (min-width: $break-m) {
 		margin: 0;
