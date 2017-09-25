@@ -4,7 +4,7 @@
 	@include transition(opacity 2s ease);
 	/* background: $black; */
 	background: linear-gradient(to left, rgba($black, .7), rgba($black, .7), rgba($black, .7)),
-				$black url(../img/puppiesSnow.jpg) no-repeat center center fixed;
+				$black url(../img/bonEchoFall.jpg) no-repeat center center fixed;
 				
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
@@ -31,7 +31,7 @@
 
 .name-initial {
 	font-size: 2.5rem;
-	color: $blue;
+	color: $light;
 }
 
 .name-icon-container {
@@ -140,7 +140,7 @@
 }
 
 .inner-bar {
-	fill: $blue;
+	fill: $light;
 	animation: rotate-and-pulse 5s;
 }
 

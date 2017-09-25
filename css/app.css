@@ -452,7 +452,7 @@ ul, ol {
   -o-transition: opacity 2s ease;
   transition: opacity 2s ease;
   /* background: $black; */
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), #000 url(../img/puppiesSnow.jpg) no-repeat center center fixed;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), #000 url(../img/bonEchoFall.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -474,7 +474,7 @@ ul, ol {
 
 .name-initial {
   font-size: 2.5rem;
-  color: #005b96; }
+  color: #b3cde0; }
 
 .name-icon-container {
   display: -webkit-box;
@@ -604,7 +604,7 @@ ul, ol {
   animation: pulse 5s; }
 
 .inner-bar {
-  fill: #005b96;
+  fill: #b3cde0;
   animation: rotate-and-pulse 5s; }
 
 @keyframes grow {
