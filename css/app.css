@@ -441,7 +441,7 @@ ul, ol {
 .skills,
 .about,
 .contact {
-  border-top: 1px solid #63665e; }
+  /* border-top: 1px solid $g-grey; */ }
 
 .main-header {
   padding: 1em;
@@ -951,7 +951,7 @@ ul, ol {
   border-radius: 50%;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
-  border: 3px solid #272933;
+  border: 1px solid #272933;
   -webkit-transition: all 0.4s ease-out;
   -moz-transition: all 0.4s ease-out;
   -ms-transition: all 0.4s ease-out;
@@ -1129,7 +1129,8 @@ span.dog-link {
   -webkit-flex-direction: column;
   -moz-flex-direction: column;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  background: #272933; }
   .contact h2 {
     margin: 1em 0; }
 

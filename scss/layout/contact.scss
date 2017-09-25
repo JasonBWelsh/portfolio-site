@@ -4,6 +4,7 @@
 	@include justify-content(#{center});
 	@include align-items(#{center});
 	@include flex-direction(#{column});
+	background: $g-black;
 	h2 {
 		@include margin(1em 0);
 	}
