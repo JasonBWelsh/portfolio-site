@@ -22,9 +22,11 @@
 .project {
 	position: relative;
   	@include margin(1em);
+  	@include pad(2em);
+  	background: $g-black;
   	height: 19em;
   	width: 19em;
-  	border: 1px solid $g-white;
+  	border: 1px solid $g-black;
   	overflow: hidden;
   	@media (min-width: $break-m) {
   		height: 20em;
@@ -49,7 +51,7 @@
 	right: 0;
 	bottom: 0; 
 	left: 0; 
-	background: $madison;
+	background: $g-black;
 	@include flexbox();
 	@include flex-direction(#{column});
 	@include justify-content(#{center});

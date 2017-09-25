@@ -681,9 +681,11 @@ ul, ol {
 .project {
   position: relative;
   margin: 1em;
+  padding: 2em;
+  background: #272933;
   height: 19em;
   width: 19em;
-  border: 1px solid #f8f8f7;
+  border: 1px solid #272933;
   overflow: hidden; }
   @media (min-width: 768px) {
     .project {
@@ -705,7 +707,7 @@ ul, ol {
   right: 0;
   bottom: 0;
   left: 0;
-  background: #2C3E50;
+  background: #272933;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
