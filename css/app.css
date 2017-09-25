@@ -807,7 +807,8 @@ ul, ol {
   -moz-align-items: center;
   -ms-align-items: center;
   align-items: center;
-  padding: 1em; }
+  padding: 1em;
+  background: #272933; }
   .skills h2 {
     margin: 1em 0 0.5em; }
 

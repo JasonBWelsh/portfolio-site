@@ -7,6 +7,7 @@
 	@include justify-content(#{center});
 	@include align-items(#{center});
 	@include pad(1em);
+	background: $g-black;
 	h2 {
 		@include margin(1em 0 .5em);
 	}
