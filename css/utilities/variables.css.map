@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAcoC,mBAAmB;AACrB,YAAY;AACR,mBAAmB;AACpB,wBAAwB",
-"sources": ["../../scss/utilities/variables.scss"],
+"mappings": "",
+"sources": [],
 "names": [],
 "file": "variables.css"
 }

@@ -112,7 +112,7 @@
 	@include pad(1em);
 	color: $white;
 	@include border-radius(5em);
-	background: $blue;
+	/* background: $g-grey; */
 	padding-bottom: 1em;
 	@media (min-width: $break-m) {
 		margin: 0;

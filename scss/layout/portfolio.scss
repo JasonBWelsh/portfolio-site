@@ -24,8 +24,7 @@
   	@include margin(1em);
   	height: 19em;
   	width: 19em;
-  	@include border-radius(.5em);
-  	border: 1px solid $white;
+  	border: 1px solid $g-white;
   	overflow: hidden;
   	@media (min-width: $break-m) {
   		height: 20em;
@@ -62,7 +61,7 @@
 }
 
 .slide .project-overlay {
-	@include border-radius(.5em);
+	/* @include border-radius(.5em); */
 }
 
 
