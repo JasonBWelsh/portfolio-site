@@ -45,7 +45,7 @@
 	max-height: 12em;
 	max-width: 12em;
 	@include border-radius(50%);
-	border: 1px solid $ebony-clay;
+	border: 3px solid $g-black;
 	@include transition(all .4s ease-out);
 	@media (min-width: $break-m) {
 		@include margin(3em 0 0);
