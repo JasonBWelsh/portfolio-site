@@ -21,6 +21,9 @@
 .name {
 	@include margin(2em 0 0);
 	text-transform: uppercase;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             	 0px 8px 13px rgba(0,0,0,0.1),
+             	 0px 18px 23px rgba(0,0,0,0.1);
 	@media (min-width: #{$break-m}) {
 		@include margin(5em 0 0);
 	}
@@ -28,7 +31,7 @@
 
 .name-initial {
 	font-size: 2.5rem;
-	color: $green-blue;
+	color: $blue;
 }
 
 .name-icon-container {
@@ -49,12 +52,12 @@
 	display: none;
 	font-size: .9rem;
 	@media (min-width: $break-m) {
-		width: 100%;
+		/* width: 100%; */
 		display: block;
 		position: fixed;
 		top: 0;
 		left: 0;
-		background: rgba($black, .5);
+		/* background: rgba($black, .5); */
 		z-index: 1000;
 	}
 }
@@ -62,6 +65,7 @@
 .main-nav-list {
 	margin-top: 1em;
 	@include flexbox();
+	@include flex-direction(#{row});
 	@include justify-content(#{space-around});
 }
 
@@ -74,15 +78,16 @@
 	@media (min-width: $break-m) {
 		@include margin(0 .5em);
 		@include pad(.5em .25em);
-		border: 1px solid $white;
-		background: $black;
+		border: 1px solid $black;
+		@include border-radius(5em);
+		background: $white;
 		&:hover {
-		transform: scale(1.1);
+			transform: scale(1.1);
 		}
 	}
 	a {
 		@include pad(1em .5em);
-		color: $white;
+		color: $black;
 		@include transition(all .4s ease);
 		@media (min-width: $break-m) {
 			@include pad(1em .5em);
@@ -135,7 +140,7 @@
 }
 
 .inner-bar {
-	fill: $green-blue;
+	fill: $blue;
 	animation: rotate-and-pulse 5s;
 }
 

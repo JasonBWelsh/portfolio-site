@@ -27,10 +27,12 @@
   	@include border-radius(.5em);
   	border: 1px solid $white;
   	overflow: hidden;
+  	@media (min-width: $break-m) {
+  		height: 20em;
+  		width: 20em;
+  	}
   	@media (min-width: $break-l) {
   		flex: 1 30%;
-  		height: 22em;
-  		width: 22em;
   	}
   	h3 {
   		@include margin(1em 0);
@@ -98,7 +100,6 @@
 .project-button {
 	@include margin(0 .5em);
 	@include pad(.5em);
-	/* background: $black; */
 	color: $white;
 	@include border-radius(50%);
 	border: 1px solid $white;
