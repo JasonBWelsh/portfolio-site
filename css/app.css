@@ -909,6 +909,9 @@ ul, ol {
   -moz-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column; }
+  .about h2 {
+    margin: 2em 0 0;
+    color: #fff; }
 
 .portrait-div {
   position: relative;
@@ -968,9 +971,6 @@ ul, ol {
   padding: 1em;
   text-align: center;
   line-height: 2; }
-  .about-text h2 {
-    margin: 1em 0 2em;
-    color: #fff; }
   .about-text p {
     margin: 0;
     padding: 0.5em; }
@@ -1108,7 +1108,8 @@ span.dog-link {
   display: block; }
 
 .highlight-about {
-  background: #0089e3 !important; }
+  background: #0089e3 !important;
+  background: #a08c74 !important; }
 
 .contact {
   padding: 1em;

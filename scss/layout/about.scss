@@ -4,6 +4,10 @@
 	@include justify-content(#{center});
 	@include align-items(#{center});
 	@include flex-direction(#{column});
+	h2 {
+		@include margin(2em 0 0);
+		color: $white;
+	}
 }
 
 .portrait-div {
@@ -60,10 +64,6 @@
 	@include pad(1em);
 	text-align: center;
 	line-height: 2;
-	h2 {
-		@include margin(1em 0 2em);
-		color: $white;
-	}
 	p {
 		@include margin(0);
 		@include pad(.5em);
@@ -154,4 +154,5 @@ span.dog-link {
 
 .highlight-about {
 	background: lighten($blue, 15%)!important;
+	background: $g-off-brown !important;
 }
