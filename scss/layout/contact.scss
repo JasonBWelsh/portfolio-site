@@ -10,6 +10,33 @@
 	}
 }
 
+
+.form-container {
+	fieldset {
+		@include flexbox();
+		@include flex-direction(#{column});
+		@include justify-content(#{center});
+		@include align-items(#{center});
+		text-align: center;
+	}
+	input,
+	textarea {
+		@include margin(1em);
+		width: 100%;
+	}
+	label {
+		display: none;
+	}
+}
+
+.contact-form-wrapper {
+	@include flexbox();
+	@include flex-direction(#{column});
+	@include justify-content(#{center});
+	@include align-items(#{center});
+	@include pad(1em);
+}
+
 .bottom-space { // space to show content bc of sticky footer
 	@include margin(0 0 103px);
 	@media (min-width: $break-m) {
