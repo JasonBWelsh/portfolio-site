@@ -18,16 +18,42 @@
 		@include justify-content(#{center});
 		@include align-items(#{center});
 		text-align: center;
+		border: none;
 	}
 	input,
 	textarea {
 		@include margin(1em);
+		@include pad(.5em);
+		@include border-radius(.2em);
 		width: 100%;
+		outline: none;
+		border: none;
+		background: $g-slate;
+		color: $white;
+	}
+	textarea {
+		height: auto;
+		resize  : none;
+  		overflow: auto;
 	}
 	label {
 		display: none;
 	}
 }
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $black;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $black;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $black;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $black;
+}
+
 
 .contact-form-wrapper {
 	@include flexbox();

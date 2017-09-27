@@ -52,12 +52,11 @@
 	display: none;
 	font-size: .9rem;
 	@media (min-width: $break-m) {
-		/* width: 100%; */
 		display: block;
 		position: fixed;
 		top: 0;
 		left: 0;
-		background: rgba($g-black, .5);
+		background: rgba($g-black, .7);
 		z-index: 1000;
 	}
 }
@@ -78,16 +77,16 @@
 	@media (min-width: $break-m) {
 		@include margin(0 .5em);
 		@include pad(.5em .25em);
-		border: 1px solid $g-black;
+		border: 1px solid $g-white;
 		@include border-radius(5em);
-		background: $g-white;
+		/* background: $g-white; */
 		&:hover {
 			transform: scale(1.1);
 		}
 	}
 	a {
 		@include pad(1em .5em);
-		color: $black;
+		color: $g-white;
 		@include transition(all .4s ease);
 		@media (min-width: $break-m) {
 			@include pad(1em .5em);

@@ -4,6 +4,8 @@
 	@include justify-content(#{center});
 	@include align-items(#{center});
 	@include flex-direction(#{column});
+	background: $g-off-brown;
+	background: linear-gradient(-45deg, $g-off-brown, $g-slate);
 	h2 {
 		@include margin(2em 0 0);
 		color: $white;
@@ -87,7 +89,6 @@
 		@include justify-content(#{center});
 		@include align-items(#{center});
 		@include border-radius(5em);
-		/* border: 1px solid $white; */
 		background: $ebony-clay;
 		height: 4.5em;
 		width: 4.5em;
@@ -154,5 +155,5 @@ span.dog-link {
 
 .highlight-about {
 	background: lighten($blue, 15%)!important;
-	background: $g-off-brown !important;
+	background: $g-orange !important;
 }
