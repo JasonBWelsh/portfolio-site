@@ -1108,8 +1108,7 @@ span.dog-link {
   display: block; }
 
 .highlight-about {
-  background: #0089e3 !important;
-  background: #ea693f !important; }
+  background: #0089e3 !important; }
 
 .contact {
   padding: 1em;
@@ -1164,11 +1163,28 @@ span.dog-link {
   border-radius: 0.2em;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
   width: 100%;
   outline: none;
-  border: none;
-  background: #79857d;
+  border: 1px solid #f8f8f7;
+  background: #272933;
   color: #fff; }
+  @media (min-width: 768px) {
+    .form-container input,
+    .form-container textarea {
+      width: 60%; } }
+  .form-container input:hover,
+  .form-container textarea:hover {
+    background: #323541; }
+  .form-container input:focus,
+  .form-container textarea:focus {
+    border: 1px solid #fff;
+    background: #3d4050;
+    transform: scale(1.03); }
 .form-container textarea {
   height: auto;
   resize: none;
@@ -1178,19 +1194,37 @@ span.dog-link {
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #000; }
+  color: #fff; }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #000; }
+  color: #fff; }
 
 :-ms-input-placeholder {
   /* IE 10+ */
-  color: #000; }
+  color: #fff; }
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: #000; }
+  color: #fff; }
+
+.contact-btn {
+  padding: 1em;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  border: none;
+  background: #005b96;
+  color: #fff;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+  .contact-btn:hover {
+    cursor: pointer;
+    background: #007ac9; }
 
 .contact-form-wrapper {
   display: -webkit-box;
@@ -1211,7 +1245,7 @@ span.dog-link {
   -moz-align-items: center;
   -ms-align-items: center;
   align-items: center;
-  padding: 1em; }
+  /* @include pad(1em); */ }
 
 .bottom-space {
   margin: 0 0 103px; }
