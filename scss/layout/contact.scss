@@ -28,7 +28,7 @@
 		@include transition(all .4s ease);
 		width: 100%;
 		outline: none;
-		border: 1px solid $g-white;
+		border: 1px solid $white;
 		background: $g-black;
 		color: $white;
 		@media (min-width: $break-m) {
@@ -43,8 +43,7 @@
 			transform: scale(1.03);
 		}
 	}
-	input {
-			}
+
 	textarea {
 		height: auto;
 		resize  : none;
@@ -95,4 +94,9 @@
 	@media (min-width: $break-m) {
 		display: none;
 	}
+}
+
+.thankyou-message {
+	@include pad(1em);
+	background: rgba($black, .5);
 }

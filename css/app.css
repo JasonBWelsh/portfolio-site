@@ -1170,7 +1170,7 @@ span.dog-link {
   transition: all 0.4s ease;
   width: 100%;
   outline: none;
-  border: 1px solid #f8f8f7;
+  border: 1px solid #fff;
   background: #272933;
   color: #fff; }
   @media (min-width: 768px) {
@@ -1252,6 +1252,10 @@ span.dog-link {
   @media (min-width: 768px) {
     .bottom-space {
       display: none; } }
+
+.thankyou-message {
+  padding: 1em;
+  background: rgba(0, 0, 0, 0.5); }
 
 .main-footer {
   display: -webkit-box;
