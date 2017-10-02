@@ -100,3 +100,40 @@
 	@include pad(1em);
 	background: rgba($black, .5);
 }
+
+.contact-links-list {
+	@include margin(1em 0);
+	@include flexbox();
+	@include justify-content(#{space-around});
+	@include pad(1em 0);
+	border: 1px solid $white;
+	@include border-radius(3em);
+	width: 100%;
+	@include transition(all .4s ease);
+	&:hover {
+		background: lighten($g-black, 5%);
+	}
+	@media (min-width: $break-m) {
+		width: 60%;
+	}
+	@media (min-width: $break-l) {
+		width: 40%;
+	}
+	li {
+		@include flexbox();
+		@include flex-direction(#{column});
+		@include justify-content(#{center});
+		@include align-items(#{center});
+	}
+	a:hover {
+		transform: scale(1.2) rotate(-5deg);
+	}
+	img {
+		height: 3em;
+		width: 3em;
+	}
+	span {
+		@include margin(1em 0 0);
+		font-size: .8rem;
+	}
+}
