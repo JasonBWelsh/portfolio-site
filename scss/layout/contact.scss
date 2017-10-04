@@ -106,18 +106,14 @@
 	@include flexbox();
 	@include justify-content(#{space-around});
 	@include pad(1em 0);
-	border: 1px solid $white;
-	@include border-radius(3em);
 	width: 100%;
+	border-bottom: 1px solid $white;
 	@include transition(all .4s ease);
-	&:hover {
-		background: lighten($g-black, 5%);
-	}
 	@media (min-width: $break-m) {
-		width: 60%;
+		width: 50%;
 	}
 	@media (min-width: $break-l) {
-		width: 40%;
+		width: 30%;
 	}
 	li {
 		@include flexbox();
@@ -129,11 +125,7 @@
 		transform: scale(1.2) rotate(-5deg);
 	}
 	img {
-		height: 3em;
-		width: 3em;
-	}
-	span {
-		@include margin(1em 0 0);
-		font-size: .8rem;
+		height: 2em;
+		width: 2em;
 	}
 }

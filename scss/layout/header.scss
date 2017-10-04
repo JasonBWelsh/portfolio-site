@@ -79,9 +79,8 @@
 		@include pad(.5em .25em);
 		border: 1px solid $g-white;
 		@include border-radius(5em);
-		/* background: $g-white; */
 		&:hover {
-			transform: scale(1.1);
+			background: rgba($white, .1);
 		}
 	}
 	a {
@@ -90,10 +89,6 @@
 		@include transition(all .4s ease);
 		@media (min-width: $break-m) {
 			@include pad(1em .5em);
-		}
-		&:hover {
-			/* color: $light; */
-			/* transform: translateX(1em); */
 		}
 	}
 }

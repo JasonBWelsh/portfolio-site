@@ -131,3 +131,10 @@ $(document).ready(function() {
 
 });
 
+// Waypoints Section 
+var portfolio = new Waypoint({
+  element: document.getElementById('portfolio'),
+  handler: function(direction) {
+    console.log('Scrolled to waypoint!')
+  }
+})
